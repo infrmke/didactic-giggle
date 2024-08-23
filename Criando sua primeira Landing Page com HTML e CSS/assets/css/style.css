@@ -9,7 +9,7 @@ html{
     max-height: 155.625rem;
     
     color: white;
-    font-size: 1rem;
+    font-size: 1.125rem;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -39,7 +39,7 @@ h1{
     font-weight: 900;
     
     color: transparent;
-    background: -webkit-linear-gradient(#33A8DB, #1472B7);
+    background: -webkit-linear-gradient(#52B6E0, #187CC9);
     
     background-clip: text;
     -webkit-background-clip: text;
@@ -65,7 +65,7 @@ footer{
 
 header.banner,
 div.banner-content{
-    height: 42rem;
+    height: 35.5rem;
 }
 
 .banner-content > *,
@@ -77,18 +77,22 @@ footer > *{
 }
 
 .banner{
+    padding-top: 2.5rem;
     border-bottom: 1px solid #33A8DB;
     
-    background: url(../images/banner.png) center/cover no-repeat scroll,
-    linear-gradient(180deg, rgba(51,168,219,0.2) 20%, rgba(10,10,10,1) 100%);
+    background: linear-gradient(180deg, rgba(10,10,10,1) 0%, rgba(51,168,219,0.2) 50%, rgba(10,10,10,1) 100%),
+    url(../images/banner.png) center/cover no-repeat scroll;
 }
 
 .banner-content{
-    width: 40rem;
+    width: 37.5rem;
     margin: auto;
 
-    padding: 2.5rem 0;
     text-align: center;
+}
+
+.banner-content h1{
+    margin-bottom: .5rem;
 }
 
 .logo{
@@ -99,11 +103,11 @@ footer > *{
 }
 
 .logo img{
-    width: 12rem;
-    height: 12rem;
+    width: 14rem;
+    height: 14rem;
     
     object-fit: contain;
-    padding: 10px;
+    padding: .5rem;
 }
 
 button{
@@ -114,10 +118,10 @@ button{
     letter-spacing: 3px;
 
     border: 2px solid;
-    border-image-source: linear-gradient(180deg, #3BA1CD 0%, #1572B7 100%);
+    border-image-source: linear-gradient(180deg, #52B6E0 0%, #187CC9 100%);
     border-image-slice: 10;
     
-    padding: 15px 80px;
+    padding: 1rem 2rem;
     
     background: none;
     color: #33A8DB;
@@ -138,7 +142,7 @@ section#course-content{
 }
 
 .module p{
-    padding: 20px 55px;
+    padding: 1.25rem 3.438rem;
     
     background: #252525;
     
@@ -185,14 +189,14 @@ section#professional-challenges{
 }
 
 #professional-challenges h3{
-    margin: .5rem 0 2.5rem;
+    margin: 1rem 0;
 
     font-size: 2rem;
     font-weight: 400;
 }
 
 footer{
-    height: 9rem;
+    height: 8rem;
     padding-top: 4rem;
 
     border-top: 1px solid #33A8DB;
