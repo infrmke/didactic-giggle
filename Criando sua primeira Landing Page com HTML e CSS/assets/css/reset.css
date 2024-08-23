@@ -1,0 +1,47 @@
+/* structured with the help of Kevin Powell (@KevinJPowell), https://github.com/kevin-powell */
+
+* {
+    margin: 0;
+    padding: 0;
+    font: inherit;
+}
+
+body{
+    min-height: 100svh;
+}
+
+img,
+picture,
+svg,
+video{
+    display: block;
+    max-width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    text-wrap: balance;
+}
+
+p{
+    max-width: 75ch;
+    margin-bottom: 2rem;
+    text-wrap: pretty;
+}
+
+a{
+    color: inherit;
+    text-decoration: none;
+}
+
+.title{
+    font-size: 3rem;
+}
+
+.subtitle{
+    font-size: 2rem;
+}
