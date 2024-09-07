@@ -11,20 +11,29 @@
 
 <body>
     <header>
-        <nav class="menu">
-            <div>
-                <img src="assets/images/svg/menu.svg" class="avatar icon_svg" alt="">
+        <nav class="menu_main">
+            <div class="menu_home">
+                <img src="assets/images/icon/menu.png" class="icon" alt="">
                 <img src="assets/images/youtubeLogo.png" id="website_logo" alt="">
             </div>
 
             <div class="menu_search">
                 <input type="search" name="" id="" placeholder="Pesquisar">
-                <img src="assets/images/svg/search.svg" class="avatar icon_svg" alt="">
-            </div>
+                <img src="assets/images/icon/keyboard.png" class="icon" alt="">
+                
+                <div class="colored">
+                    <img src="assets/images/icon/search.png" class="icon" alt="">
+                </div>
 
-            <div>
-                <img src="assets/images/svg/video.svg" class="avatar icon_svg" alt="">
-                <img src="assets/images/svg/bell.svg" class="avatar icon_svg" alt="">
+                <div class="round colored">
+                    <img src="assets/images/icon/mic.png" class="icon other" alt="">
+                </div>
+            </div>
+            
+            <div class="menu_user-actions">
+                <img src="assets/images/icon/add-video.png" class="icon" alt="">
+                <img src="assets/images/icon/notification-bell.png" class="icon" alt="">
+
                 <img src="assets/images/avatarCanalUsuario.png" class="avatar avatar_user-channel" alt="">
             </div>
         </nav>
@@ -40,10 +49,10 @@
                 <h1 id="video_title">Semana Front-end | Dia 01: Construindo uma Landing Page no Mundo Invertido com HTML e CSS</h1>
                 
                 <div class="video_actions">
-                    <div>
+                    <div class="channel_preview">
                         <img src="assets/images/avatarCanalYoutube.jpg" class="avatar avatar_streaming-channel" alt="">
                         <div class="channel_info">
-                            <p>Dio</p>
+                            <p id="channel_info-title">Dio</p>
                             <p>83,3 mil inscritos</p>
                         </div>
                         
@@ -51,20 +60,26 @@
                     </div>
 
                 <div class="video_actions">  
-                    <div class="video_actions reaction">
-                        <img src="assets/images/svg/thumbs-up.svg" class="avatar icon_svg" title='Marcar como "Gostei"' alt="">
-                        <p>2 mil</p>
-                        <img src="assets/images/svg/thumbs-down.svg" class="avatar icon_svg" title='Marcar como "Não gostei"' alt="">
+                    <div class="colored video_actions reaction">
+                        <div class="feedback">
+                            <img src="assets/images/icon/thumbs-up.png" class="icon" title='Marcar como "Gostei"' alt="">
+                            <p>2 mil</p>
+                        </div>
+                        <img src="assets/images/icon/thumbs-down.png" class="icon" title='Marcar como "Não gostei"' alt="">
                     </div>
                     
-                    <div class="video_actions other">
-                        <img src="assets/images/svg/share.svg" class="avatar icon_svg" title="Compartilhar" alt="">
+                    <div class="colored video_actions other">
+                        <img src="assets/images/icon/share.png" class="icon" title="Compartilhar" alt="">
                         <p>Compartilhar</p>
                     </div>
                     
-                    <div class="video_actions other">
-                        <img src="assets/images/svg/download.svg" class="avatar icon_svg" title="Download" alt="">
+                    <div class="colored video_actions other">
+                        <img src="assets/images/icon/download.png" class="icon" title="Download" alt="">
                         <p>Download</p>
+                    </div>
+
+                    <div class="round colored video_actions other">
+                        <img src="assets/images/icon/more_horizontal.png" class="icon" alt="">
                     </div>
                 </div>
                 </div>
@@ -86,102 +101,112 @@
 
             <section class="sidebar">
                 <article class="recommended_sidebar-video">
-                    <img src="assets/images/sidebar/a4517af358672fc9b1abddb2fe5faf42.png" class="video video_thumbnail"
+                    <div class="video_thumbnail">
+                        <img src="assets/images/sidebar/a4517af358672fc9b1abddb2fe5faf42.png" class="video"
                         alt="">
+                        <p class="video_timestamp">1:32:40</p>
+                    </div>
 
                     <div class="recommended_sidebar-video_info">
-                        <p>Geração Tech Unimed - BH - Ciência de Dados</p>
+                        <p class="suggested_video-title">Geração Tech Unimed - BH - Ciência de Dados</p>
                         <p>Digital Innovation One</p>
-                        <p>2,1 mil visualizações • Transmitido há 2 dias</p>
+                        <p>2,1 mil visualizações • Transmitido...</p>
                     </div>
+                    <img src="assets/images/icon/more_vertical.png" class="icon" alt="">
+                </article>
+
+                <!-- scrum talks -->
+
+                <article class="recommended_sidebar-video">
+                    <div class="video_thumbnail">
+                        <img src="assets/images/sidebar/799f7d106fa23e01cdd29dd12e77868e.png" class="video"
+                        alt="">
+                        <p class="video_timestamp">1:04:55</p>
+                    </div>
+
+                    <div class="recommended_sidebar-video_info">
+                        <p class="suggested_video-title">Machine Learning Avançado - Fast Track</p>
+                        <p>Digital Innovation One</p>
+                        <p>1,7 mil visualizações • Transmitido...</p>
+                    </div>
+                    <img src="assets/images/icon/more_vertical.png" class="icon" alt="">
                 </article>
 
                 <article class="recommended_sidebar-video">
-                    <img src="assets/images/sidebar/08653a7b86205406e7b61d2d04b6a969.png" class="video video_thumbnail"
+                    <div class="video_thumbnail">
+                        <img src="assets/images/sidebar/e38fba1dbc09654449afab6b748e2957.png" class="video"
                         alt="">
+                        <p class="video_timestamp">1:12:00</p>
+                    </div>
 
                     <div class="recommended_sidebar-video_info">
-                        <p>Scrum Talks</p>
+                        <p class="suggested_video-title">Global Skills #2 - Project Planning</p>
                         <p>Digital Innovation One</p>
-                        <p>1,6 mil visualizações • Transmitido há 3 dias</p>
+                        <p>971 visualizações • Transmitido...</p>
                     </div>
+                    <img src="assets/images/icon/more_vertical.png" class="icon" alt="">
                 </article>
 
                 <article class="recommended_sidebar-video">
-                    <img src="assets/images/sidebar/799f7d106fa23e01cdd29dd12e77868e.png" class="video video_thumbnail"
+                    <div class="video_thumbnail">
+                        <img src="assets/images/sidebar/3c31408bfbba041512d82157cb9e1c91.png" class="video"
                         alt="">
+                        <p class="video_timestamp">1:08:46</p>
+                    </div>
 
                     <div class="recommended_sidebar-video_info">
-                        <p>Machine Learning Avançado - Fast Track</p>
+                        <p class="suggested_video-title">Como aprender a programar Python do ZERO</p>
                         <p>Digital Innovation One</p>
-                        <p>1,7 mil visualizações • Transmitido há 4 dias</p>
+                        <p>711 visualizações • Transmitido...</p>
                     </div>
+                    <img src="assets/images/icon/more_vertical.png" class="icon" alt="">
                 </article>
 
                 <article class="recommended_sidebar-video">
-                    <img src="assets/images/sidebar/e38fba1dbc09654449afab6b748e2957.png" class="video video_thumbnail"
+                    <div class="video_thumbnail">
+                        <img src="assets/images/sidebar/a4517af358672fc9b1abddb2fe5faf42.png" class="video"
                         alt="">
+                        <p class="video_timestamp">1:32:40</p>
+                    </div>
 
                     <div class="recommended_sidebar-video_info">
-                        <p>Global Skills #2 - Project Planning</p>
+                        <p class="suggested_video-title">Geração Tech Unimed - BH - Ciência de Dados</p>
                         <p>Digital Innovation One</p>
-                        <p>971 visualizações • Transmitido há 5 dias</p>
+                        <p>2,1 mil visualizações • Transmitido...</p>
                     </div>
+                    <img src="assets/images/icon/more_vertical.png" class="icon" alt="">
+                </article>
+
+                <!-- scrum talks -->
+
+                <article class="recommended_sidebar-video">
+                    <div class="video_thumbnail">
+                        <img src="assets/images/sidebar/799f7d106fa23e01cdd29dd12e77868e.png" class="video"
+                        alt="">
+                        <p class="video_timestamp">1:04:55</p>
+                    </div>
+
+                    <div class="recommended_sidebar-video_info">
+                        <p class="suggested_video-title">Machine Learning Avançado - Fast Track</p>
+                        <p>Digital Innovation One</p>
+                        <p>1,7 mil visualizações • Transmitido...</p>
+                    </div>
+                    <img src="assets/images/icon/more_vertical.png" class="icon" alt="">
                 </article>
 
                 <article class="recommended_sidebar-video">
-                    <img src="assets/images/sidebar/3c31408bfbba041512d82157cb9e1c91.png" class="video video_thumbnail"
+                    <div class="video_thumbnail">
+                        <img src="assets/images/sidebar/e38fba1dbc09654449afab6b748e2957.png" class="video"
                         alt="">
+                        <p class="video_timestamp">1:12:00</p>
+                    </div>
 
                     <div class="recommended_sidebar-video_info">
-                        <p>Como aprender a programar Python do ZERO</p>
+                        <p class="suggested_video-title">Global Skills #2 - Project Planning</p>
                         <p>Digital Innovation One</p>
-                        <p>711 visualizações • Transmitido há 6 dias</p>
+                        <p>971 visualizações • Transmitido...</p>
                     </div>
-                </article>
-
-                <article class="recommended_sidebar-video">
-                    <img src="assets/images/sidebar/a4517af358672fc9b1abddb2fe5faf42.png" class="video video_thumbnail"
-                        alt="">
-
-                    <div class="recommended_sidebar-video_info">
-                        <p>Geração Tech Unimed - BH - Ciência de Dados</p>
-                        <p>Digital Innovation One</p>
-                        <p>2,1 mil visualizações • Transmitido há 2 dias</p>
-                    </div>
-                </article>
-
-                <article class="recommended_sidebar-video">
-                    <img src="assets/images/sidebar/08653a7b86205406e7b61d2d04b6a969.png" class="video video_thumbnail"
-                        alt="">
-
-                    <div class="recommended_sidebar-video_info">
-                        <p>Scrum Talks</p>
-                        <p>Digital Innovation One</p>
-                        <p>1,6 mil visualizações • Transmitido há 3 dias</p>
-                    </div>
-                </article>
-
-                <article class="recommended_sidebar-video">
-                    <img src="assets/images/sidebar/799f7d106fa23e01cdd29dd12e77868e.png" class="video video_thumbnail"
-                        alt="">
-
-                    <div class="recommended_sidebar-video_info">
-                        <p>Machine Learning Avançado - Fast Track</p>
-                        <p>Digital Innovation One</p>
-                        <p>1,7 mil visualizações • Transmitido há 4 dias</p>
-                    </div>
-                </article>
-
-                <article class="recommended_sidebar-video">
-                    <img src="assets/images/sidebar/e38fba1dbc09654449afab6b748e2957.png" class="video video_thumbnail"
-                        alt="">
-
-                    <div class="recommended_sidebar-video_info">
-                        <p>Global Skills #2 - Project Planning</p>
-                        <p>Digital Innovation One</p>
-                        <p>971 visualizações • Transmitido há 5 dias</p>
-                    </div>
+                    <img src="assets/images/icon/more_vertical.png" class="icon" alt="">
                 </article>
             </section>
         </aside>
