@@ -20,7 +20,7 @@ body{
 }
 
 header{
-    height: 65px;
+    height: 4.063rem;
 }
 
 nav.menu_main{
@@ -30,7 +30,7 @@ nav.menu_main{
     align-items: center;
 
     margin: 0;
-    padding: 0 10px;
+    padding: 0 0.625rem;
 }
 
 .menu_home,
@@ -42,19 +42,19 @@ nav.menu_main{
     justify-content: space-between;
 
     margin: 0;
-    padding: 8px;
+    padding: 0.5rem;
 
     width: fit-content;
 }
 
 .menu_home > *,
 .menu_user-actions > *{
-    margin: 0 15px;
+    margin: 0 0.938rem;
 }
 
 #website_logo{
-    width: 90px;
-    height: 20px;
+    width: 5.625rem;
+    height: 1.25rem;
 }
 
 .menu_search{
@@ -67,7 +67,7 @@ nav.menu_main{
 
 .menu_search .round.colored img{
     margin: 0;
-    padding: 10px 10px 5px;
+    padding: 0.625rem 0.625rem 0.313rem;
 }
 
 .menu_search .round.colored{
@@ -75,17 +75,17 @@ nav.menu_main{
 }
 
 input[type="search"]{
-    width: 570px;
-    height: 40px;
+    width: 35.625rem;
+    height: 2.5rem;
 
     margin-right: 0;
-    padding: 10px 5px;
+    padding: 0.625rem 0.313rem;
 
-    text-indent: 10px;
+    text-indent: 0.625rem;
     
     outline: none;
     border: none;
-    border-radius: 20px 0 0 20px;
+    border-radius: 1.25rem 0 0 1.25rem;
 
     border-top: 1px solid var(--main-tertiary-color);
     border-bottom: 1px solid var(--main-tertiary-color);
@@ -94,39 +94,39 @@ input[type="search"]{
 
 input + .icon:first-of-type{
     position: absolute;
-    right: 135px;
+    right: 8.438rem;
 
     opacity: .5;
 }
 
 input ~ .colored .icon{
-    width: 18px;
-    height: 18px;
+    width: 1.125rem;
+    height: 1.125rem;
 
-    padding: 10px;
-    margin-left: 10px;
+    padding: 0.625rem;
+    margin-left: 0.625rem;
 }
 
 input ~ .colored:first-of-type{
-    width: 60px;
-    height: 38px;
+    width: 3.75rem;
+    height: 2.375rem;
 
-    margin-right: 15px;
+    margin-right: 0.938rem;
     border: 1px solid var(--main-tertiary-color);
     
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
+    border-top-right-radius: 1.25rem;
+    border-bottom-right-radius: 1.25rem;
 }
 
 .menu_user-actions .icon,
 .video_actions.reaction .icon{
-    width: 20px;
-    height: 20px;
+    width: 1.25rem;
+    height: 1.25rem;
 }
 
 .avatar{
-    width: 35px;
-    height: 35px;
+    width: 2.188rem;
+    height: 2.188rem;
     
     object-fit: cover;
     border-radius: 50px;
@@ -134,7 +134,7 @@ input ~ .colored:first-of-type{
 
 .icon{
     width: fit-content;
-    height: 20px;
+    height: 1.25rem;
 }
 
 main{
@@ -142,20 +142,20 @@ main{
     flex-flow: row nowrap;
     justify-content: center;
 
-    margin-left: 35px;
-    padding-bottom: 10px;
+    margin-left: 2.188rem;
+    padding-bottom: 0.625rem;
 }
 
 section.video_container,
 section.sidebar{
-    padding: 18px 24px 0 0;
+    padding: 1.125rem 1.5rem 0 0;
 }
 
 .video_container{
     display: flex;
     flex-flow: column nowrap;
 
-    width: 1000px;
+    width: 62.5rem;
     height: fit-content;
 }
 
@@ -165,11 +165,11 @@ section.sidebar{
 
 .video_content{
     width: inherit;
-    height: 550px;
+    height: 34.375rem;
 }
 
 .video{
-    border-radius: 10px;
+    border-radius: 0.625rem;
 }
 
 #video_streaming{
@@ -177,13 +177,13 @@ section.sidebar{
     height: 100%;
 
     object-fit: cover;
-    border-radius: 15.5px;
+    border-radius: 0.969rem;
 }
 
 #video_title{
-    margin: 10px 0;    
+    margin: 0.625rem 0;    
     
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 700;
 }
 
@@ -202,25 +202,25 @@ section.sidebar{
 }
 
 .channel_preview .avatar{
-    width: 40px;
-    height: 40px;
+    width: 2.5rem;
+    height: 2.5rem;
 }
 
 .channel_info > *{
-    margin: 3px 10px;
+    margin: 0.188rem 0.625rem;
 }
 
 .channel_info{
-    margin: 0 2.5px;
+    margin: 0 0.156rem;
 }
 
 #channel_info-title{
-    font-size: 16.5px;
+    font-size: 1.031rem;
     font-weight: 500;
 }
 
 .channel_info p + p{
-    font-size: 12.5px;
+    font-size: 0.781rem;
     color: #727272;
 }
 
@@ -232,7 +232,7 @@ section.sidebar{
 }
 
 .round.colored{
-    height: 40px;
+    height: 2.5rem;
 }
 
 .colored{
@@ -245,12 +245,12 @@ section.sidebar{
 }
 
 #subscribe_button{
-    height: 35.5px;
+    height: 2.219rem;
 
-    margin: 5px 10px;
-    padding: 5.5px 15px;
+    margin: 0.313rem 0.625rem;
+    padding: 0.344rem 0.938rem;
 
-    font-size: 14px;
+    font-size: 0.875rem;
     color: white;
 
     border: none;
@@ -259,8 +259,8 @@ section.sidebar{
 
 .video_actions > .video_actions.reaction,
 .video_actions > .video_actions.other{
-    padding: 8px 10px;
-    margin: 0 5px;
+    padding: 0.5rem 0.625rem;
+    margin: 0 0.313rem;
 }
 
 .video_actions.reaction > *,
@@ -273,8 +273,8 @@ section.sidebar{
 
 .video_actions.reaction p,
 .video_actions.other p{
-    font-size: 14.5px;
-    padding: 0 5px;
+    font-size: 0.906rem;
+    padding: 0 0.313rem;
 }
 
 .video_actions.reaction .feedback > *{
@@ -283,37 +283,37 @@ section.sidebar{
 }
 
 .video_actions.reaction .feedback{
-    margin-right: 5px;
+    margin-right: 0.313rem;
     border-right: 1px solid var(--main-tertiary-color);
 }
 
 .video_actions.reaction .feedback img,
 .video_actions.reaction .feedback + img{
-    margin: 0 5px;
+    margin: 0 0.313rem;
 }
 
 .video_actions.reaction .feedback img + p{
-    padding-right: 10px;
+    padding-right: 0.625rem;
 }
 
 .video_actions.other:last-of-type .icon{
-    width: 15px;
-    height: 15px;
+    width: 0.938rem;
+    height: 0.938rem;
 }
 
 .video_actions.other:last-of-type{
     height: fit-content;
-    padding: 10px;
+    padding: 0.625rem;
 }
 
 details#video_details-info{
-    margin: 10px 0;
-    padding: 10px;
+    margin: 0.625rem 0;
+    padding: 0.625rem;
 
     cursor: pointer;
 
     background-color: var(--main-primary-color);
-    border-radius: 10px;
+    border-radius: 0.625rem;
 }
 
 .video_details-data{
@@ -323,8 +323,8 @@ details#video_details-info{
 
 .video_details-data p,
 .video_details-description p{
-    margin: 5px 0;
-    font-size: 14px;
+    margin: 0.313rem 0;
+    font-size: 0.875rem;
 }
 
 .video_details-data p{
@@ -332,7 +332,7 @@ details#video_details-info{
 }
 
 .video_details-data p + p{
-    margin-left: 5px;
+    margin-left: 0.313rem;
     color: var(--main-secondary-color);
 }
 
@@ -340,7 +340,7 @@ details#video_details-info{
     display: flex;
     flex-flow: column nowrap;
 
-    width: 410px;
+    width: 25.625rem;
     height: fit-content;
 }
 
@@ -349,18 +349,18 @@ details#video_details-info{
     height: fit-content;
 
     position: relative;
-    margin-top: 12px;
+    margin-top: 0.75rem;
 }
 
 .video_categories img.icon{
     position: absolute;
 
     top: 0;
-    right: 18px;
+    right: 1.125rem;
 }
 
 .suggested_categories{
-    margin: 0 0 15px 0;
+    margin: 0 0 0.938rem 0;
     padding: 0;
 
     list-style-type: none;
@@ -369,18 +369,18 @@ details#video_details-info{
 .suggested_categories li{
     display: inline;
 
-    font-size: 14.5px;
+    font-size: 0.906rem;
     font-weight: 500;
     
-    margin: 0 3px 0 0;
-    padding: 8px 10.5px;
+    margin: 0 0.188rem 0 0;
+    padding: 0.5rem 0.656rem;
 
     border-radius: 8px;
     background-color: var(--main-primary-color);
 }
 
 .suggested_categories li:not(:first-of-type){
-    margin: 0 3px;
+    margin: 0 0.188rem;
 }
 
 li.selected_suggested_category{
@@ -391,7 +391,7 @@ li.selected_suggested_category{
 
 .sidebar > article {
     width: inherit;
-    margin-top: 10px;
+    margin-top: 0.625rem;
 }
 
 .sidebar article:first-of-type{
@@ -408,7 +408,7 @@ li.selected_suggested_category{
     display: flex;
     flex-flow: column nowrap;
     
-    margin: 0 8px;
+    margin: 0 0.5rem;
 }
 
 .recommended_sidebar-video_info > *{
@@ -416,7 +416,7 @@ li.selected_suggested_category{
 }
 
 .recommended_sidebar-video_info > p{
-    margin-bottom: 5px;
+    margin-bottom: 0.313rem;
 }
 
 .recommended_sidebar-video_info .icon{
@@ -428,26 +428,26 @@ li.selected_suggested_category{
 
 .suggested_video-title{
     font-weight: 500;
-    font-size: 15px;
+    font-size: 0.938rem;
 
-    margin-top: 2.5px;
+    margin-top: 0.156rem;
 }
 
 .suggested_video-title + p,
 .suggested_video-title ~ p{
-    font-size: 12px;
+    font-size: 0.75rem;
     color: var(--main-secondary-color);
 }
 
 .video_thumbnail{
     width: fit-content;
-    height: 95px;
+    height: 5.938rem;
 
     position: relative;
 }
 
 .video_thumbnail img{
-    width: 175px;
+    width: 10.938rem;
     height: 100%;
 
     object-fit: cover;
@@ -462,11 +462,11 @@ li.selected_suggested_category{
     width: fit-content;
     border-radius: 3px;
 
-    font-size: 10.5px;
+    font-size: 0.656rem;
     font-weight: 500;
 
-    margin: 5px;
-    padding: 3px;
+    margin: 0.313rem;
+    padding: 0.188rem;
 
     color: white;
     background-color: rgba(0, 0, 0, 0.6);
