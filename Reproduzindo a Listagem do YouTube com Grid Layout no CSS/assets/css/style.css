@@ -19,9 +19,14 @@ body{
     font-family: 'Roboto', Arial, sans-serif;
 }
 
-header{
-    /* position: fixed; */
+header#main_header{
+    position: fixed;
+    z-index: 1;
+
+    width: 100vw;
     height: 4.063rem;
+
+    background-color: white;
 }
 
 nav.menu_main{
@@ -198,6 +203,10 @@ nav.menu_section{
     height: fit-content;
 }
 
+li.selected_menu_category{
+    background-color: var(--main-primary-color);
+}
+
 footer{
     font-size: 12px;
     color: var(--main-secondary-color);
@@ -216,6 +225,7 @@ main{
     padding: 20px;
 
     position: absolute;
+    top: 60px;
     left: 240px;
 }
 
