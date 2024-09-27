@@ -1,0 +1,261 @@
+@import url(normalize.css);
+
+/* fonts: roboto (regular [400, 500, 700]) */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+:root {
+    --main-primary-color: #f2f2f2;
+    --main-secondary-color: #727272;
+    --main-tertiary-color: #d3d3d3;
+  }
+
+html,
+body {
+    font-size: 1rem;
+    background-color: #ffffff;
+}
+
+body{
+    font-family: 'Roboto', Arial, sans-serif;
+}
+
+header{
+    /* position: fixed; */
+    height: 4.063rem;
+}
+
+nav.menu_main{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+
+    margin: 0;
+    padding: 0 0.625rem;
+}
+
+.menu_home,
+.menu_search,
+.menu_user-actions,
+.menu_user-login{
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
+
+    margin: 0;
+    padding: 0.5rem;
+
+    width: fit-content;
+}
+
+.menu_home > *{
+    margin: 0 0.938rem;
+}
+
+#website_logo{
+    width: 5.625rem;
+    height: 1.25rem;
+}
+
+.menu_search{
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+
+    position: relative;
+}
+
+.menu_search .round.colored img{
+    margin: 0;
+    padding: 0.625rem 0.625rem 0.313rem;
+}
+
+.menu_search .round.colored{
+    margin: 0;
+}
+
+input[type="search"]{
+    width: 35.625rem;
+    height: 2.5rem;
+
+    margin-right: 0;
+    padding: 0.625rem 0.313rem;
+
+    text-indent: 0.625rem;
+    
+    outline: none;
+    border: none;
+    border-radius: 1.25rem 0 0 1.25rem;
+
+    border-top: 1px solid var(--main-tertiary-color);
+    border-bottom: 1px solid var(--main-tertiary-color);
+    border-left: 1px solid var(--main-tertiary-color);
+}
+
+input + .icon:first-of-type{
+    position: absolute;
+    right: 8.438rem;
+
+    opacity: .5;
+}
+
+input ~ .colored .icon{
+    width: 1.125rem;
+    height: 1.125rem;
+
+    padding: 0.625rem;
+    margin-left: 0.625rem;
+}
+
+input ~ .colored:first-of-type{
+    width: 3.75rem;
+    height: 2.375rem;
+
+    margin-right: 0.938rem;
+    border: 1px solid var(--main-tertiary-color);
+    
+    border-top-right-radius: 1.25rem;
+    border-bottom-right-radius: 1.25rem;
+}
+
+.menu_user-actions .icon{
+    width: 1.25rem;
+    height: 1.25rem;
+}
+
+#more_options{
+    margin-right: 15px;
+
+    width: 24px;
+    height: 24px;
+}
+
+.menu_user-login > *{
+    margin: 0;
+    padding: 0 2px;
+}
+
+.menu_user-login{
+    border: 1px solid black;
+    border-radius: 40px;
+}
+
+.menu_user-login .icon{
+    margin-right: 5px;
+}
+
+.avatar{
+    width: 2.188rem;
+    height: 2.188rem;
+    
+    object-fit: cover;
+    border-radius: 50px;
+}
+
+.icon,
+svg{
+    width: fit-content;
+    height: 1.25rem;
+}
+
+.other{
+    border-radius: 30px;
+    font-weight: 500;
+}
+
+.round.colored{
+    height: 2.5rem;
+}
+
+.round{
+    width: fit-content;
+    border-radius: 50px;
+}
+
+.colored{
+    background-color: var(--main-primary-color);
+}
+
+section#main_navbar{
+    position: fixed;
+    top: 56px;
+
+    overflow-y: scroll;
+
+    width: 230px;
+    height: 700px;
+    padding: 0 10px 10px 10px;
+}
+
+#main_navbar ul,
+.suggested_categories{
+    padding: 0;
+    list-style-type: none;
+}
+
+nav.menu_section{
+    height: fit-content;
+}
+
+footer{
+    font-size: 12px;
+    color: var(--main-secondary-color);
+}
+
+.footer_links{
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--main-secondary-color);
+}
+
+main{
+    display: flex;
+    flex-flow: column nowrap;
+
+    padding: 20px;
+
+    position: absolute;
+    left: 240px;
+}
+
+.suggested_categories{
+    margin: 0 0 0.938rem 0;
+    padding: 0;
+
+    list-style-type: none;
+}
+
+.suggested_categories li{
+    display: inline;
+
+    font-size: 0.906rem;
+    font-weight: 500;
+    
+    margin: 0 0.188rem 0 0;
+    padding: 0.5rem 0.656rem;
+
+    border-radius: 8px;
+    background-color: var(--main-primary-color);
+}
+
+.suggested_categories li:not(:first-of-type){
+    margin: 0 0.188rem;
+}
+
+li.selected_suggested_category{
+    color: white;
+    background-color: black;
+}
+
+section.suggested_videos-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.video_thumbnail{
+    width: 400px;
+    height: 225px;
+
+    aspect-ratio: 16 / 9;
+}
