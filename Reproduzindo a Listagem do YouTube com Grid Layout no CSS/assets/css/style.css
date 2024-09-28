@@ -24,9 +24,10 @@ header#main_header{
     z-index: 1;
 
     width: 100vw;
-    height: 4.063rem;
+    height: fit-content;
 
-    background-color: white;
+    padding: 10px 0;
+    background-color: #ffffff;
 }
 
 nav.menu_main{
@@ -36,7 +37,12 @@ nav.menu_main{
     align-items: center;
 
     margin: 0;
-    padding: 0 0.625rem;
+    width: calc(100vw - 15px);
+}
+
+nav.menu_main > div{
+    margin: 0;
+    padding: 0 15px;
 }
 
 .menu_home,
@@ -45,17 +51,16 @@ nav.menu_main{
 .menu_user-login{
     display: flex;
     flex-flow: row nowrap;
+    
     align-items: center;
     justify-content: space-between;
-
-    margin: 0;
-    padding: 0.5rem;
 
     width: fit-content;
 }
 
-.menu_home > *{
-    margin: 0 0.938rem;
+.menu_home img:first-child,
+.menu_user-actions img:first-child{
+    margin: 0 20px 0 10px;
 }
 
 #website_logo{
@@ -77,11 +82,11 @@ nav.menu_main{
 }
 
 .menu_search .round.colored{
-    margin: 0;
+    margin: 0 15px;
 }
 
 input[type="search"]{
-    width: 35.625rem;
+    width: 31.625rem;
     height: 2.5rem;
 
     margin-right: 0;
@@ -100,9 +105,13 @@ input[type="search"]{
 
 input + .icon:first-of-type{
     position: absolute;
-    right: 8.438rem;
+    right: 9.6rem;
 
     opacity: .5;
+}
+
+input + .icon:first-of-type:hover{
+    opacity: 1;
 }
 
 input ~ .colored .icon{
@@ -117,7 +126,6 @@ input ~ .colored:first-of-type{
     width: 3.75rem;
     height: 2.375rem;
 
-    margin-right: 0.938rem;
     border: 1px solid var(--main-tertiary-color);
     
     border-top-right-radius: 1.25rem;
@@ -130,24 +138,35 @@ input ~ .colored:first-of-type{
 }
 
 #more_options{
-    margin-right: 15px;
-
     width: 24px;
     height: 24px;
 }
 
 .menu_user-login > *{
     margin: 0;
-    padding: 0 2px;
+    padding: 5px 0;
 }
 
 .menu_user-login{
-    border: 1px solid black;
+    padding: 2px 12px;
+
+    border: 1px solid var(--main-tertiary-color);
     border-radius: 40px;
 }
 
-.menu_user-login .icon{
+.menu_user-login:hover{
+    background-color: hsl(214, 94%, 95%);
+    border: 1px solid transparent;
+}
+
+.menu_user-login svg{
     margin-right: 5px;
+}
+
+.menu_user-login p{
+    font-size: 14px;
+    font-weight: 500;
+    color: #065fd4;
 }
 
 .avatar{
@@ -190,7 +209,7 @@ section#main_navbar{
 
     width: 230px;
     height: 700px;
-    padding: 0 10px 10px 10px;
+    padding: 10px;
 }
 
 #main_navbar ul,
@@ -203,19 +222,94 @@ nav.menu_section{
     height: fit-content;
 }
 
-li.selected_menu_category{
+.menu_section ul{
+    margin: 0;
+    border-bottom: 1px solid var(--main-tertiary-color);
+}
+
+.nav_section-title{
+    margin: 20px 0 5px 15px;
+
+    font-size: 16.5px;
+    font-weight: 500;
+}
+
+.menu_section ul li{
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+
+    font-size: 14px;
+
+    padding: 10px 15px;
+    border-radius: 10px;
+}
+
+.menu_section li:first-child{
+    margin-top: 10px;
+}
+
+.menu_section li:last-child{
+    margin-bottom: 10px;
+}
+
+.menu_section li > svg{
+    margin-right: 20px;
+}
+
+.menu_section li > a{
+    text-decoration: none;
+    color: inherit;
+}
+
+li.selected_menu-category{
+    font-weight: 500;
     background-color: var(--main-primary-color);
 }
 
+.menu_login-cameo{
+    width: 200px;
+}
+
 footer{
+    width: 190px;
+    padding: 15px 10px 10px 10px;
+
     font-size: 12px;
     color: var(--main-secondary-color);
+}
+
+footer p{
+    margin: 15px 0 0;
 }
 
 .footer_links{
     font-size: 14px;
     font-weight: 500;
     color: var(--main-secondary-color);
+}
+
+.footer_links ul{
+    margin: 0 0 10px 0;
+}
+
+.footer_links ul li{
+    display: inline-block;
+    cursor: pointer;
+    
+    margin: 2px 0;
+    width: fit-content;
+}
+
+section#suggested_topics-navbar article{
+    position: relative;
+}
+
+#suggested_topics-navbar article ul + .icon{
+    position: absolute;
+
+    right: 0;
+    top: 0;
 }
 
 main{
@@ -253,7 +347,7 @@ main{
     margin: 0 0.188rem;
 }
 
-li.selected_suggested_category{
+li.selected_suggested-category{
     color: white;
     background-color: black;
 }
