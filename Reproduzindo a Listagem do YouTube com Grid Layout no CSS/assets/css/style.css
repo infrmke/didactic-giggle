@@ -4,9 +4,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
 
 :root {
-    --main-primary-color: #f2f2f2;
-    --main-secondary-color: #727272;
-    --main-tertiary-color: #d3d3d3;
+    --main-primary-color: hsl(0, 0%, 95%);
+    --main-secondary-color: hsl(0, 0%, 83%);
+    --main-tertiary-color: hsl(0, 0%, 45%);
   }
 
 html,
@@ -98,9 +98,9 @@ input[type="search"]{
     border: none;
     border-radius: 1.25rem 0 0 1.25rem;
 
-    border-top: 1px solid var(--main-tertiary-color);
-    border-bottom: 1px solid var(--main-tertiary-color);
-    border-left: 1px solid var(--main-tertiary-color);
+    border-top: 1px solid var(--main-secondary-color);
+    border-bottom: 1px solid var(--main-secondary-color);
+    border-left: 1px solid var(--main-secondary-color);
 }
 
 input + .icon:first-of-type{
@@ -126,7 +126,7 @@ input ~ .colored:first-of-type{
     width: 3.75rem;
     height: 2.375rem;
 
-    border: 1px solid var(--main-tertiary-color);
+    border: 1px solid var(--main-secondary-color);
     
     border-top-right-radius: 1.25rem;
     border-bottom-right-radius: 1.25rem;
@@ -150,7 +150,7 @@ input ~ .colored:first-of-type{
 .menu_user-login{
     padding: 2px 12px;
 
-    border: 1px solid var(--main-tertiary-color);
+    border: 1px solid var(--main-secondary-color);
     border-radius: 40px;
 }
 
@@ -224,7 +224,7 @@ nav.menu_section{
 
 .menu_section ul{
     margin: 0;
-    border-bottom: 1px solid var(--main-tertiary-color);
+    border-bottom: 1px solid var(--main-secondary-color);
 }
 
 .nav_section-title{
@@ -245,6 +245,11 @@ nav.menu_section{
     border-radius: 10px;
 }
 
+.menu_section li:hover:not(.selected_menu-category,
+.menu_login-cameo li){
+    background-color: var(--main-primary-color);
+}
+
 .menu_section li:first-child{
     margin-top: 10px;
 }
@@ -262,7 +267,7 @@ nav.menu_section{
     color: inherit;
 }
 
-li.selected_menu-category{
+.menu_section li.selected_menu-category{
     font-weight: 500;
     background-color: var(--main-primary-color);
 }
@@ -276,7 +281,7 @@ footer{
     padding: 15px 10px 10px 10px;
 
     font-size: 12px;
-    color: var(--main-secondary-color);
+    color: var(--main-tertiary-color);
 }
 
 footer p{
@@ -286,7 +291,7 @@ footer p{
 .footer_links{
     font-size: 14px;
     font-weight: 500;
-    color: var(--main-secondary-color);
+    color: var(--main-tertiary-color);
 }
 
 .footer_links ul{
@@ -347,7 +352,11 @@ main{
     margin: 0 0.188rem;
 }
 
-li.selected_suggested-category{
+.suggested_categories li:not(.selected_suggested-category):hover{
+    background-color: var(--main-secondary-color);
+}
+
+.suggested_categories li.selected_suggested-category{
     color: white;
     background-color: black;
 }
