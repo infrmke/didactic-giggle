@@ -75,12 +75,16 @@ nav.menu_main > div{
     color: var(--main-tertiary-color);
 }
 
-.menu_search{
+div.menu_search{
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
-
     position: relative;
+}
+
+.menu_search label{
+    margin-right: .5rem;
+    visibility: hidden;
 }
 
 .menu_search .round.colored img{
