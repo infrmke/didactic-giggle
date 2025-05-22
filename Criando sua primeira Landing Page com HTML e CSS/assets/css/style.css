@@ -25,11 +25,17 @@ button{ font: inherit; }
     margin: auto;
 }
 
+.border-bottom{
+    border-bottom: 1px solid #33A8DB;
+}
+
 /* general */
 body{
     font-family: "Raleway", Arial, Helvetica, sans-serif;
     font-size: clamp(1.063rem, 5vw - 1.25rem, 1.2rem);
     line-height: 1.5;
+    background-color: #13131A;
+    color: #ffffffcc;
 }
 
 /* typography */
@@ -43,3 +49,47 @@ h2{ font-size: clamp(1.5rem, 5vw - 1.5rem, 1.75rem); }
 h3{ font-size: clamp(1.375rem, 5vw - 1.25rem, 1.5rem); }
 
 p { max-width: 65ch; }
+
+.title,
+.subtitle{
+    font-weight: 700;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: #33A8DB;
+}
+
+.title--hero{
+    font-weight: 900;
+    letter-spacing: 0;
+}
+
+/* HEADER: hero */
+.hero{
+    background: url("../images/banner.png"),
+    linear-gradient(0deg, transparent 0%, rgba(51, 169, 219, 0.2) 50%, transparent 100%);
+}
+
+.hero__img-wrapper{
+    position: relative;
+}
+
+.hero__img-wrapper::before{
+    content: "";
+    display: flex;
+    position: absolute;
+    z-index: -1;
+    width: 240px;
+    height: 230px;
+    border-radius: 100vmax;
+    background-color: hsla(0, 0%, 0%, 0.5);
+}
+
+/* MAIN: feature */
+.feature{
+    background-image: url("../images/woman-code.png");
+}
+
+/* FOOTER: cta */
+.cta{
+    background: linear-gradient(0deg, rgba(51, 169, 219, 0.2) 0%, transparent 100%);
+}
