@@ -24,7 +24,7 @@ body{
     font-family: "Raleway", Arial, Helvetica, sans-serif;
     font-size: clamp(1.063rem, 5vw - 1.25rem, 1.2rem);
     line-height: 1.5;
-    background-color: #13131A;
+    background-color: #08080C;
     color: #ffffffcc;
 }
 
@@ -39,13 +39,19 @@ h1, h2, h3{
     text-wrap: balance;
 }
 
-h1, .title--feature{ font-size: clamp(1.75rem, 5vw - 1.25rem, 2.125rem); }
+h1, .title--feature{ font-size: clamp(2rem, 5vw - 1rem, 2.25rem); }
 h2{ font-size: clamp(1.5rem, 5vw - 1.5rem, 1.75rem); }
 h3{ font-size: clamp(1.375rem, 5vw - 1.25rem, 1.5rem); }
 
 p {
     max-width: 65ch;
     margin-bottom: 1.125rem;
+}
+
+@media screen and (min-width: 45em) {
+    p{
+        margin: 1.125rem 0;
+    }
 }
 
 .title,
@@ -91,7 +97,13 @@ p {
     border-image: linear-gradient(0deg, #33A8DB 0%, #1472B7 100%) 1;
     border-width: 2px;
     border-style: solid;
-    padding: .5em 1em;
+    padding: 1em 1.5em;
+}
+
+@media screen and (min-width: 45em) {
+    .btn{
+        padding: 1em 2.5em;
+    }
 }
 
 /* clusters */
@@ -104,12 +116,31 @@ p {
     padding-inline: 1.125em;
 }
 
+@media screen and (min-width: 65em) {
+    .hero,
+    .details,
+    .feature,
+    .wrap-up,
+    .cta{
+        padding-inline: 1.25em;
+    }
+}
+
 .hero,
 .details,
 .feature,
 .wrap-up{
     padding-block: 3.75rem;
     border-bottom: 1px solid #33A8DB;
+}
+
+@media screen and (min-width: 45em){
+    .hero,
+    .details,
+    .feature,
+    .wrap-up{
+        padding-block: 4.5rem;
+    }
 }
 
 .hero__img-wrapper,
@@ -120,7 +151,7 @@ p {
 
 /* HEADER: hero */
 .hero{
-    background: url("../images/banner.png"),
+    background: url("../images/banner.png") 5% 0% / cover no-repeat,
     linear-gradient(0deg, transparent 0%, rgba(51, 169, 219, 0.2) 50%, transparent 100%);
 }
 
@@ -138,6 +169,21 @@ p {
         border-radius: 100vmax;
         background-color: hsla(0, 0%, 0%, 0.5);
     }
+}
+
+.hero__preface{
+    margin-bottom: 2.5rem;
+}
+
+@media screen and (min-width: 45em) {
+    .hero__preface{
+        margin-bottom: 2.5rem;
+    }
+}
+
+.hero__link{
+    font-weight: 900;
+    font-size: 1rem;
 }
 
 /* MAIN: details */
@@ -159,6 +205,14 @@ p {
     box-shadow: inset -2px 6px 4px 0px rgba(0, 0, 0, .4);
 }
 
+@media screen and (min-width: 45em){
+    .list__item{
+        flex-direction: row;
+        justify-content: center;
+        gap: .5rem;
+    }
+}
+
 .list__index{
     font-weight: 500;
     color: #33A8DB;
@@ -172,23 +226,55 @@ p {
     background: url("../images/woman-code.png") center / cover no-repeat fixed;
 }
 
+@media screen and (min-width: 45em){
+    .feature{
+        display: block;
+    }
+
+    .container--feature{
+        max-width: clamp(320px, 90%, 1000px);
+        margin: auto;
+    }
+
+    .title--feature{
+        width: 220px;
+        text-align: left;
+        text-wrap: balance;
+        margin-right: auto;
+    }
+}
+
 /* FOOTER: cta */
 .cta{
     padding-block: 2em;
     background: linear-gradient(0deg, rgba(51, 169, 219, 0.2) 0%, transparent 100%);
+}
 
-    p{
-        margin-top: .25rem;
-        margin-bottom: 0;
-    }
+.cta__body{
+    margin-top: 1rem;
 }
 
 .cta__img{
     width: 246px;
-    margin-top: 1rem;
+}
+
+@media screen and (min-width: 45em){
+    .cta__img{
+        width: initial;
+    }
+}
+
+.cta__redirect{
+    font-size: .875rem;
+    margin: .5rem auto 0;
 }
 
 .cta__link{
     font-weight: 700;
     color: #E5E044;
+
+    &:focus,
+    &:hover{
+        color: #33A8DB;
+    }
 }
