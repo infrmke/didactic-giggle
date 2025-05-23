@@ -16,51 +16,58 @@
 </head>
 
 <body>
-  <header class="hero border-bottom">
+  <header class="hero">
     <div class="container">
       <div class="hero__img-wrapper">
         <img class="hero__img" src="assets/images/logo.png" alt="">
       </div>
 
-      <div class="hero__body">
+      <div>
         <h1 class="title title--hero">Trilha de CSS da DIO</h1>
         <p>Dê o próximo passo na sua jornada no mundo do Front-end aprendendo a estilizar páginas web. Acesse já e
           aprenda
           do zero a como desenvolver sites profissionais.</p>
 
-        <a class="btn" href="https://www.dio.me/curso-css" target="_blank">Quero me inscrever</a>
+        <a class="hero__link btn title" href="https://www.dio.me/curso-css" target="_blank">Quero me inscrever</a>
       </div>
     </div>
   </header>
 
   <main class="content">
-    <section class="details border-bottom">
+    <section class="details">
       <div class="container">
-        <div class="details__intro">
-          <h2 class="title">O que vou aprender?</h2>
-          <p>Através de 3 módulos de conteúdo, que vão do básico ao avançado, você aprenderá a desenvolver sites
-            utilizando somente HTML e CSS, sem nenhuma biblioteca ou framework a mais.</p>
+        <h2 class="title">O que vou aprender?</h2>
+        <p>Através de 3 módulos de conteúdo, que vão do básico ao avançado, você aprenderá a desenvolver sites
+          utilizando somente HTML e CSS, sem nenhuma biblioteca ou framework a mais.</p>
 
-          <ul class="details__list">
-            <li>Módulo 01: primeiros passos com CSS</li>
-            <li>Módulo 02: trabalhando com layouts no CSS</li>
-            <li>Módulo 03: refinando os estilos CSS das nossas páginas</li>
-          </ul>
+        <ul class="list">
+          <li class="list__item">
+            <span class="list__index">Módulo 01:</span> primeiros passos com CSS
+          </li>
 
-          <p>Na prática, você entenderá como organizar sua folha de estilos, trabalhar com animações e dominar os
-            hábitos
-            necessários para se tornar um profissional preparado!</p>
-        </div>
+          <li class="list__item">
+            <span class="list__index">Módulo 02:</span> trabalhando com layouts no CSS
+          </li>
+
+          <li class="list__item">
+            <span class="list__index">Módulo 03:</span> refinando os estilos CSS das nossas
+            páginas
+          </li>
+        </ul>
+
+        <p>Na prática, você entenderá como organizar sua folha de estilos, trabalhar com animações e dominar os
+          hábitos
+          necessários para se tornar um profissional preparado!</p>
       </div>
     </section>
 
-    <section class="feature border-bottom">
+    <section class="feature">
       <div class="container">
-        <p>Transforme o mundo com a gente</p>
+        <p class="title title--feature">Transforme o mundo com a gente</p>
       </div>
     </section>
 
-    <section class="wrap-up border-bottom">
+    <section class="wrap-up">
       <div class="container">
         <h2 class="title">Evolua e encare novos desafios profissionais</h2>
         <img src="assets/images/professional-challenges.png" class="wrap-up__img" alt="">
@@ -78,7 +85,8 @@
     <div class="container">
       <div class="cta__body">
         <img src="assets/images/dio-logo.png" class="cta__img" alt="">
-        <p>Desbloqueando <a href="https://dio.me" target="_blank">oportunidades</a> com você</p>
+        <p>Acesse <a class="cta__link" href="https://dio.me" target="_blank">dio.me</a> e desbloqueie suas oportunidades
+        </p>
       </div>
     </div>
   </footer>
