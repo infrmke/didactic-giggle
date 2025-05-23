@@ -48,22 +48,14 @@ p {
     margin-bottom: 1.125rem;
 }
 
-.title,
-.subtitle{
+.title{
     font-weight: 700;
     letter-spacing: 4px;
     text-transform: uppercase;
     color: #33A8DB;
 }
 
-.title + p,
-.subtitle + p{
-    margin-top: .75rem;
-}
-
-.subtitle{
-    margin-top: 1rem;
-}
+.title + p{ margin-top: .75rem; }
 
 .title--hero,
 .title--feature{
@@ -105,7 +97,7 @@ p {
     border-width: 2px;
     border-style: solid;
     padding: 1em 1.5em;
-    transition: color .2s ease-in-out;
+    transition: color .2s ease-out;
 
     &:focus,
     &:hover{
@@ -115,9 +107,7 @@ p {
 }
 
 @media screen and (min-width: 45em) {
-    .btn{
-        padding: 1em 2.5em;
-    }
+    .btn{ padding: 1em 2.5em; }
 }
 
 /* clusters */
@@ -135,9 +125,7 @@ p {
     .details,
     .feature,
     .wrap-up,
-    .cta{
-        padding-inline: 1.25em;
-    }
+    .cta{ padding-inline: 1.25em; }
 }
 
 .hero,
@@ -152,9 +140,7 @@ p {
     .hero,
     .details,
     .feature,
-    .wrap-up{
-        padding-block: 4.5rem;
-    }
+    .wrap-up{ padding-block: 4.5rem; }
 }
 
 .hero__img-wrapper,
@@ -190,9 +176,7 @@ p {
 }
 
 @media screen and (min-width: 45em) {
-    .hero__preface{
-        margin-bottom: 2.5rem;
-    }
+    .hero__preface{ margin-bottom: 2.5rem; }
 }
 
 .hero__link{
@@ -210,9 +194,7 @@ p {
 }
 
 @media screen and (min-width: 45em){
-    .list{
-        margin: 1.25rem 0;
-    }
+    .list{ margin: 1.25rem 0; }
 }
 
 .list__item{
@@ -236,9 +218,7 @@ p {
 }
 
 @media screen and (min-width: 65em){
-    .list__item{
-        width: 80%;
-    }
+    .list__item{ width: 80%; }
 }
 
 .list__index{
@@ -266,24 +246,22 @@ p {
     }
 }
 
+@media screen and (min-width: 65em){
+    .feature{ background-position: center; }
+}
+
 /* FOOTER: cta */
 .cta{
     padding-block: 2em;
     background: linear-gradient(0deg, rgba(51, 169, 219, 0.2) 0%, transparent 100%);
 }
 
-.cta__body{
-    margin-top: 1rem;
-}
+.cta__body{ margin-top: 1rem; }
 
-.cta__img{
-    width: 246px;
-}
+.cta__img{ width: 246px; }
 
 @media screen and (min-width: 45em){
-    .cta__img{
-        width: initial;
-    }
+    .cta__img{ width: initial; }
 }
 
 .cta__redirect{
@@ -294,10 +272,8 @@ p {
 .cta__link{
     font-weight: 700;
     color: #E5E044;
-    transition: color .2s ease-in-out;
+    transition: color .2s ease-out;
 
     &:focus,
-    &:hover{
-        color: #33A8DB;
-    }
+    &:hover{ color: #33A8DB; }
 }
