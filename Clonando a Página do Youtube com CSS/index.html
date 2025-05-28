@@ -15,155 +15,202 @@
 </head>
 
 <body>
-    <header>
-        <img src="assets/images/yt_logo_rgb_light.png" alt="">
+    <header class="header">
+        <div class="header__wrapper">
+            <div class="menu">
+                <div class="menu__wrapper">
+                    <button class="btn btn--header btn--menu">
+                        <div class="svg svg__item--desktop">
+                            <svg class="svg__item" width="800px" height="800px" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4 6H20M4 12H20M4 18H20" stroke="#000000" stroke-width="1"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                    </button>
 
-        <img src="assets/images/icons/search.png" alt="">
+                    <div class="logo" title="Página inicial do Youtube">
+                        <picture class="logo__wrapper">
+                            <source class="logo__img" media="(min-width: 1024px)"
+                                srcset="assets/images/yt_logo_rgb_light.png" />
+                            <source class="logo__img" media="(max-width: 1024px)"
+                                srcset="assets/images/yt_logo_rgb_dark.png" />
+                            <img class="logo__img" src="assets/images/yt_logo_rgb_dark.png" alt="" />
+                        </picture>
 
-        <img src="assets/images/icons/three-dots-vertical.png" alt="">
+                        <sup class="logo__lang">BR</sup>
+                    </div>
+                </div>
+            </div>
 
-        <div>
-            <img src="assets/images/icons/user-circle.png" alt="">
-            <p>Abrir app</p>
+
+            <div class="search">
+                <div class="search__wrapper">
+                    <div class="input">
+                        <div class="input__wrapper">
+                            <input class="input__entry" type="search" name="" id="" placeholder="Pesquisar">
+
+                            <button class="btn btn--keyboard">
+                                <div class="svg">
+                                    <svg class="svg__item svg__item--tablet" width="800px" height="800px"
+                                        viewBox="0 -0.5 17 17" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                        xmlns:xlink="http://www.w3.org/1999/xlink" class="si-glyph si-glyph-keyboard"
+                                        fill="#000000">
+                                        <g id="SVGRepo_bgCarrier" stroke-width="0" />
+                                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" />
+                                        <g id="SVGRepo_iconCarrier">
+                                            <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                                <path
+                                                    d="M1,4.031 L1,11 L15.997,11 L15.997,4.031 L1,4.031 L1,4.031 Z M11.969,5 L13.016,5 L13.016,6.023 L11.969,6.023 L11.969,5 L11.969,5 Z M13.016,6.969 L13.016,8.016 L11.985,8.016 L11.985,6.969 L13.016,6.969 L13.016,6.969 Z M9.967,4.979 L11.017,4.979 L11.017,6.039 L9.967,6.039 L9.967,4.979 L9.967,4.979 Z M11.022,6.975 L11.022,8.037 L9.979,8.037 L9.979,6.975 L11.022,6.975 L11.022,6.975 Z M7.982,4.979 L9.015,4.979 L9.015,6.015 L7.982,6.015 L7.982,4.979 L7.982,4.979 Z M7.965,6.975 L9.043,6.975 L9.043,8.059 L7.965,8.059 L7.965,6.975 L7.965,6.975 Z M4.972,4.995 L6.026,4.995 L6.026,6.023 L4.972,6.023 L4.972,4.995 L4.972,4.995 Z M7,6.988 L7,8.037 L5.985,8.037 L5.985,6.988 L7,6.988 L7,6.988 Z M5.031,6.975 L5.031,8.037 L3.97,8.037 L3.97,6.975 L5.031,6.975 L5.031,6.975 Z M2.969,4.984 L4.031,4.984 L4.031,6.031 L2.969,6.031 L2.969,4.984 L2.969,4.984 Z M1.969,6.979 L3,6.979 L3,8.016 L1.969,8.016 L1.969,6.979 L1.969,6.979 Z M4,10 L2,10 L2,9 L4,9 L4,10 L4,10 Z M12.021,10.021 L4.969,10.021 L4.969,8.968 L12.021,8.968 L12.021,10.021 L12.021,10.021 Z M15,10 L13,10 L13,9 L15,9 L15,10 L15,10 Z M15.016,8 L13.985,8 L13.985,6.969 L15.016,6.969 L15.016,8 L15.016,8 Z M15.016,6.023 L13.969,6.023 L13.969,5 L15.016,5 L15.016,6.023 L15.016,6.023 Z"
+                                                    fill="#E5E5E5" class="si-glyph-fill"> </path>
+                                            </g>
+                                        </g>
+                                    </svg>
+                                </div>
+
+                                <div class="svg">
+                                    <svg class="svg__item svg__item--desktop" width="800px" height="800px"
+                                        viewBox="0 -0.5 17 17" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                        xmlns:xlink="http://www.w3.org/1999/xlink" class="si-glyph si-glyph-keyboard"
+                                        fill="#000000">
+                                        <g id="SVGRepo_bgCarrier" stroke-width="0" />
+                                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" />
+                                        <g id="SVGRepo_iconCarrier">
+                                            <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                                <path
+                                                    d="M1,4.031 L1,11 L15.997,11 L15.997,4.031 L1,4.031 L1,4.031 Z M11.969,5 L13.016,5 L13.016,6.023 L11.969,6.023 L11.969,5 L11.969,5 Z M13.016,6.969 L13.016,8.016 L11.985,8.016 L11.985,6.969 L13.016,6.969 L13.016,6.969 Z M9.967,4.979 L11.017,4.979 L11.017,6.039 L9.967,6.039 L9.967,4.979 L9.967,4.979 Z M11.022,6.975 L11.022,8.037 L9.979,8.037 L9.979,6.975 L11.022,6.975 L11.022,6.975 Z M7.982,4.979 L9.015,4.979 L9.015,6.015 L7.982,6.015 L7.982,4.979 L7.982,4.979 Z M7.965,6.975 L9.043,6.975 L9.043,8.059 L7.965,8.059 L7.965,6.975 L7.965,6.975 Z M4.972,4.995 L6.026,4.995 L6.026,6.023 L4.972,6.023 L4.972,4.995 L4.972,4.995 Z M7,6.988 L7,8.037 L5.985,8.037 L5.985,6.988 L7,6.988 L7,6.988 Z M5.031,6.975 L5.031,8.037 L3.97,8.037 L3.97,6.975 L5.031,6.975 L5.031,6.975 Z M2.969,4.984 L4.031,4.984 L4.031,6.031 L2.969,6.031 L2.969,4.984 L2.969,4.984 Z M1.969,6.979 L3,6.979 L3,8.016 L1.969,8.016 L1.969,6.979 L1.969,6.979 Z M4,10 L2,10 L2,9 L4,9 L4,10 L4,10 Z M12.021,10.021 L4.969,10.021 L4.969,8.968 L12.021,8.968 L12.021,10.021 L12.021,10.021 Z M15,10 L13,10 L13,9 L15,9 L15,10 L15,10 Z M15.016,8 L13.985,8 L13.985,6.969 L15.016,6.969 L15.016,8 L15.016,8 Z M15.016,6.023 L13.969,6.023 L13.969,5 L15.016,5 L15.016,6.023 L15.016,6.023 Z"
+                                                    fill="#000000" class="si-glyph-fill"> </path>
+                                            </g>
+                                        </g>
+                                    </svg>
+                                </div>
+                            </button>
+                        </div>
+
+                        <button class="btn btn--search" title="Pesquisar">
+                            <div class="svg">
+                                <svg class="svg__item svg__item--mobile" width="800px" height="800px"
+                                    viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g id="SVGRepo_bgCarrier" stroke-width="0" />
+                                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" />
+                                    <g id="SVGRepo_iconCarrier">
+                                        <path d="M17 17L21 21" stroke="#F1F1F1" stroke-width="1.5"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path
+                                            d="M19 11C19 15.4183 15.4183 19 11 19C6.58172 19 3 15.4183 3 11C3 6.58172 6.58172 3 11 3C15.4183 3 19 6.58172 19 11Z"
+                                            stroke="#F1F1F1" stroke-width="1.5" />
+                                    </g>
+                                </svg>
+
+                                <svg class="svg__item svg__item--desktop" width="800px" height="800px"
+                                    viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g id="SVGRepo_bgCarrier" stroke-width="0" />
+                                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" />
+                                    <g id="SVGRepo_iconCarrier">
+                                        <path d="M17 17L21 21" stroke="#000000" stroke-width="1" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path
+                                            d="M19 11C19 15.4183 15.4183 19 11 19C6.58172 19 3 15.4183 3 11C3 6.58172 6.58172 3 11 3C15.4183 3 19 6.58172 19 11Z"
+                                            stroke="#000000" stroke-width="1" />
+                                    </g>
+                                </svg>
+                            </div>
+                        </button>
+                    </div>
+
+                    <button class="search__mic btn btn--header btn--mic" title="Pesquisar com sua voz">
+                        <div class="svg">
+                            <svg class="svg__item svg__item--mobile" fill="#F1F1F1" width="800px" height="800px"
+                                viewBox="-3 0 19 19" xmlns="http://www.w3.org/2000/svg" class="cf-icon-svg">
+                                <path
+                                    d="M11.665 7.915v1.31a5.257 5.257 0 0 1-1.514 3.694 5.174 5.174 0 0 1-1.641 1.126 5.04 5.04 0 0 1-1.456.384v1.899h2.312a.554.554 0 0 1 0 1.108H3.634a.554.554 0 0 1 0-1.108h2.312v-1.899a5.045 5.045 0 0 1-1.456-.384 5.174 5.174 0 0 1-1.641-1.126 5.257 5.257 0 0 1-1.514-3.695v-1.31a.554.554 0 1 1 1.109 0v1.31a4.131 4.131 0 0 0 1.195 2.917 3.989 3.989 0 0 0 5.722 0 4.133 4.133 0 0 0 1.195-2.917v-1.31a.554.554 0 1 1 1.109 0zM3.77 10.37a2.875 2.875 0 0 1-.233-1.146V4.738A2.905 2.905 0 0 1 3.77 3.58a3 3 0 0 1 1.59-1.59 2.902 2.902 0 0 1 1.158-.233 2.865 2.865 0 0 1 1.152.233 2.977 2.977 0 0 1 1.793 2.748l-.012 4.487a2.958 2.958 0 0 1-.856 2.09 3.025 3.025 0 0 1-.937.634 2.865 2.865 0 0 1-1.152.233 2.905 2.905 0 0 1-1.158-.233A2.957 2.957 0 0 1 3.77 10.37z" />
+                            </svg>
+
+                            <svg class="svg__item svg__item--desktop" fill="#000000" width="800px" height="800px"
+                                viewBox="-3 0 19 19" xmlns="http://www.w3.org/2000/svg" class="cf-icon-svg">
+                                <path
+                                    d="M11.665 7.915v1.31a5.257 5.257 0 0 1-1.514 3.694 5.174 5.174 0 0 1-1.641 1.126 5.04 5.04 0 0 1-1.456.384v1.899h2.312a.554.554 0 0 1 0 1.108H3.634a.554.554 0 0 1 0-1.108h2.312v-1.899a5.045 5.045 0 0 1-1.456-.384 5.174 5.174 0 0 1-1.641-1.126 5.257 5.257 0 0 1-1.514-3.695v-1.31a.554.554 0 1 1 1.109 0v1.31a4.131 4.131 0 0 0 1.195 2.917 3.989 3.989 0 0 0 5.722 0 4.133 4.133 0 0 0 1.195-2.917v-1.31a.554.554 0 1 1 1.109 0zM3.77 10.37a2.875 2.875 0 0 1-.233-1.146V4.738A2.905 2.905 0 0 1 3.77 3.58a3 3 0 0 1 1.59-1.59 2.902 2.902 0 0 1 1.158-.233 2.865 2.865 0 0 1 1.152.233 2.977 2.977 0 0 1 1.793 2.748l-.012 4.487a2.958 2.958 0 0 1-.856 2.09 3.025 3.025 0 0 1-.937.634 2.865 2.865 0 0 1-1.152.233 2.905 2.905 0 0 1-1.158-.233A2.957 2.957 0 0 1 3.77 10.37z" />
+                            </svg>
+                        </div>
+                    </button>
+                </div>
+            </div>
+
+            <div class="login">
+                <div class="login__wrapper">
+                    <div class="svg btn btn--header" title="Configurações">
+                        <svg class="svg__item svg__item--mobile" width="800px" height="800px" viewBox="0 0 24 24"
+                            id="three-dots" xmlns="http://www.w3.org/2000/svg" fill="#F1F1F1">
+                            <g id="SVGRepo_bgCarrier" stroke-width="0" />
+                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" />
+                            <g id="SVGRepo_iconCarrier">
+                                <g id="_20x20_three-dots--grey" data-name="20x20/three-dots--grey"
+                                    transform="translate(24) rotate(90)">
+                                    <rect id="Rectangle" width="24" height="24" fill="none" />
+                                    <circle id="Oval" cx="1" cy="1" r="1" transform="translate(5 11)" stroke="#F1F1F1"
+                                        stroke-miterlimit="10" stroke-width="1" />
+                                    <circle id="Oval-2" data-name="Oval" cx="1" cy="1" r="1"
+                                        transform="translate(11 11)" stroke="#F1F1F1" stroke-miterlimit="10"
+                                        stroke-width="1" />
+                                    <circle id="Oval-3" data-name="Oval" cx="1" cy="1" r="1"
+                                        transform="translate(17 11)" stroke="#F1F1F1" stroke-miterlimit="10"
+                                        stroke-width="1" />
+                                </g>
+                            </g>
+                        </svg>
+
+                        <svg class="svg__item svg__item--desktop" width="800px" height="800px" viewBox="0 0 24 24"
+                            id="three-dots" xmlns="http://www.w3.org/2000/svg">
+                            <g id="_20x20_three-dots--grey" data-name="20x20/three-dots--grey"
+                                transform="translate(24) rotate(90)">
+                                <rect id="Rectangle" width="24" height="24" fill="none" />
+                                <circle id="Oval" cx="1" cy="1" r="1" transform="translate(5 11)" stroke="#000000"
+                                    stroke-miterlimit="10" stroke-width="1" />
+                                <circle id="Oval-2" data-name="Oval" cx="1" cy="1" r="1" transform="translate(11 11)"
+                                    stroke="#000000" stroke-miterlimit="10" stroke-width="1" />
+                                <circle id="Oval-3" data-name="Oval" cx="1" cy="1" r="1" transform="translate(17 11)"
+                                    stroke="#000000" stroke-miterlimit="10" stroke-width="1" />
+                            </g>
+                        </svg>
+                    </div>
+
+                    <div class="redirect btn btn--header btn--outline-light btn--outline-blue">
+                        <div class="svg">
+                            <svg class="svg__item svg__item--mobile" fill="#F1F1F1" width="800px" height="800px"
+                                viewBox="0 0 256 256" id="Flat" xmlns="http://www.w3.org/2000/svg" stroke="#F1F1F1"
+                                stroke-width="5">
+                                <g id="SVGRepo_bgCarrier" stroke-width="0" />
+                                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" />
+
+                                <g id="SVGRepo_iconCarrier">
+                                    <path
+                                        d="M228,128A100,100,0,1,0,60.71,201.90967a3.97048,3.97048,0,0,0,.842.751,99.79378,99.79378,0,0,0,132.8982-.00195,3.96558,3.96558,0,0,0,.83813-.74756A99.76267,99.76267,0,0,0,228,128ZM36,128a92,92,0,1,1,157.17139,64.87207,75.616,75.616,0,0,0-44.50782-34.04053,44,44,0,1,0-41.32714,0,75.61784,75.61784,0,0,0-44.50782,34.04A91.70755,91.70755,0,0,1,36,128Zm92,28a36,36,0,1,1,36-36A36.04061,36.04061,0,0,1,128,156ZM68.86475,198.417a68.01092,68.01092,0,0,1,118.27.00049,91.80393,91.80393,0,0,1-118.27-.00049Z" />
+                                </g>
+                            </svg>
+
+                            <svg class="svg__item svg__item--desktop" fill="#065fd4" width="800px" height="800px"
+                                viewBox="0 0 256 256" id="Flat" xmlns="http://www.w3.org/2000/svg" stroke="#065fd4"
+                                stroke-width="5">
+
+                                <g id="SVGRepo_bgCarrier" stroke-width="0" />
+
+                                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" />
+
+                                <g id="SVGRepo_iconCarrier">
+                                    <path
+                                        d="M228,128A100,100,0,1,0,60.71,201.90967a3.97048,3.97048,0,0,0,.842.751,99.79378,99.79378,0,0,0,132.8982-.00195,3.96558,3.96558,0,0,0,.83813-.74756A99.76267,99.76267,0,0,0,228,128ZM36,128a92,92,0,1,1,157.17139,64.87207,75.616,75.616,0,0,0-44.50782-34.04053,44,44,0,1,0-41.32714,0,75.61784,75.61784,0,0,0-44.50782,34.04A91.70755,91.70755,0,0,1,36,128Zm92,28a36,36,0,1,1,36-36A36.04061,36.04061,0,0,1,128,156ZM68.86475,198.417a68.01092,68.01092,0,0,1,118.27.00049,91.80393,91.80393,0,0,1-118.27-.00049Z" />
+                                </g>
+
+                            </svg>
+                        </div>
+
+                        <p class="redirect__action">Abrir app</p>
+                        <p class="redirect__login">Fazer login</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </header>
-
-    <main>
-        <section>
-            <div>
-                <img src="assets/images/video_semana_frontend.jpg" alt="">
-                <h1>Semana Front-end | Dia 01: Construindo uma Landing Page no Mundo Invertido com HTML e CSS</h1>
-            </div>
-
-            <div>
-                <img src="assets/images/icons/link.png" alt="">
-                <p>Não listado</p>
-            </div>
-
-            <div>
-                <p>31 mil visualizações</p>
-                <p>Transmitido há 2 anos</p>
-            </div>
-
-            <div>
-                <p>#Frontend</p>
-                <p>#MundoInvertido</p>
-                <p>#Dio</p>
-            </div>
-
-            <div>
-                <img src="assets/images/channel_dio.jpg" alt="">
-                <p>DIO</p>
-                <p>120 mil</p>
-                <button>Inscrever-se</button>
-            </div>
-
-            <div>
-                <img src="assets/images/icons/thumbs-up.png" alt="">
-                <p>2 mil</p>
-                <img src="assets/images/icons/thumbs-down.png" alt="">
-
-                <img src="assets/images/icons/share.png" alt="">
-                <p>Compartilhar</p>
-
-                <img src="assets/images/icons/bookmark.png" alt="">
-                <p>Salvar</p>
-
-                <img src="assets/images/icons/flag.png" alt="">
-                <p>Denunciar</p>
-            </div>
-
-            <aside>
-                <div>
-                    <p>Comentários</p>
-                    <p>107</p>
-
-                    <input type="text" name="" id="" placeholder="Adicione um comentário...">
-                </div>
-            </aside>
-        </section>
-    </main>
-
-    <aside>
-        <section>
-            <article>
-                <div>
-                    <img src="assets/images/sidebar/video_geracao_tech.jpg" alt="">
-
-                    <div>
-                        <img src="assets/images/channel_dio.jpg" alt="">
-
-                        <div>
-                            <h2>Geração Tech Unimed-BH - Ciência de Dados | Aula Inaugural</h2>
-                            <p>DIO • 3,6 mil visualizações</p>
-                        </div>
-
-                        <img src="assets/images/icons/three-dots-vertical.png" alt="">
-                    </div>
-                </div>
-
-                <div>
-                    <img src="assets/images/sidebar/video_scrum_talks.jpg" alt="">
-
-                    <div>
-                        <img src="assets/images/channel_dio.jpg" alt="">
-
-                        <div>
-                            <h2>Scrum Talks</h2>
-                            <p>DIO • 2 mil visualizações</p>
-                        </div>
-
-                        <img src="assets/images/icons/three-dots-vertical.png" alt="">
-                    </div>
-                </div>
-
-                <div>
-                    <img src="assets/images/sidebar/video_machine_learning.jpg" alt="">
-
-                    <div>
-                        <img src="assets/images/channel_dio.jpg" alt="">
-
-                        <div>
-                            <h2>Machine Learning Avançado – Fast Track</h2>
-                            <p>DIO • 2,1 mil visualizações</p>
-                        </div>
-
-                        <img src="assets/images/icons/three-dots-vertical.png" alt="">
-                    </div>
-                </div>
-
-                <div>
-                    <img src="assets/images/sidebar/video_project_planning.jpg" alt="">
-
-                    <div>
-                        <img src="assets/images/channel_dio.jpg" alt="">
-
-                        <div>
-                            <h2>Global Skills #2 - Project Planning</h2>
-                            <p>DIO • 1,1 mil visualizações</p>
-                        </div>
-
-                        <img src="assets/images/icons/three-dots-vertical.png" alt="">
-                    </div>
-                </div>
-
-                <div>
-                    <img src="assets/images/sidebar/video_aprenda_python.jpg" alt="">
-
-                    <div>
-                        <img src="assets/images/channel_dio.jpg" alt="">
-
-                        <div>
-                            <h2>Como aprender a programar Python do ZERO | Getting Started #26</h2>
-                            <p>DIO • 5,8 mil visualizações</p>
-                        </div>
-
-                        <img src="assets/images/icons/three-dots-vertical.png" alt="">
-                    </div>
-                </div>
-            </article>
-        </section>
-    </aside>
 </body>
 
 </html>
