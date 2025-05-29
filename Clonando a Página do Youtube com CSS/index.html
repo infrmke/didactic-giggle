@@ -20,6 +20,14 @@
             <div class="menu">
                 <div class="menu__wrapper">
                     <button class="btn btn--header btn--menu">
+                        <div class="svg">
+                            <svg class="svg__item svg__item--tablet" width="800px" height="800px" viewBox="0 0 24 24"
+                                fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4 6H20M4 12H20M4 18H20" stroke="#F1F1F1" stroke-width="1"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </div>
+
                         <div class="svg svg__item--desktop">
                             <svg class="svg__item" width="800px" height="800px" viewBox="0 0 24 24" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
@@ -42,7 +50,6 @@
                     </div>
                 </div>
             </div>
-
 
             <div class="search">
                 <div class="search__wrapper">
@@ -89,7 +96,7 @@
 
                         <button class="btn btn--search" title="Pesquisar">
                             <div class="svg">
-                                <svg class="svg__item svg__item--mobile" width="800px" height="800px"
+                                <svg class="svg__item svg__item--tablet" width="800px" height="800px"
                                     viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <g id="SVGRepo_bgCarrier" stroke-width="0" />
                                     <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" />
@@ -136,8 +143,25 @@
                 </div>
             </div>
 
-            <div class="login">
-                <div class="login__wrapper">
+            <div class="redirect">
+                <div class="redirect__wrapper">
+                    <button class="btn btn--search btn--search-mobile" title="Pesquisar">
+                        <div class="svg">
+                            <svg class="svg__item svg__item--mobile" width="800px" height="800px" viewBox="0 0 24 24"
+                                fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g id="SVGRepo_bgCarrier" stroke-width="0" />
+                                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" />
+                                <g id="SVGRepo_iconCarrier">
+                                    <path d="M17 17L21 21" stroke="#F1F1F1" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path
+                                        d="M19 11C19 15.4183 15.4183 19 11 19C6.58172 19 3 15.4183 3 11C3 6.58172 6.58172 3 11 3C15.4183 3 19 6.58172 19 11Z"
+                                        stroke="#F1F1F1" stroke-width="1.5" />
+                                </g>
+                            </svg>
+                        </div>
+                    </button>
+
                     <div class="svg btn btn--header" title="Configurações">
                         <svg class="svg__item svg__item--mobile" width="800px" height="800px" viewBox="0 0 24 24"
                             id="three-dots" xmlns="http://www.w3.org/2000/svg" fill="#F1F1F1">
@@ -174,7 +198,7 @@
                         </svg>
                     </div>
 
-                    <div class="redirect btn btn--header btn--outline-light btn--outline-blue">
+                    <div class="action btn btn--header btn--outline-light btn--outline-blue">
                         <div class="svg">
                             <svg class="svg__item svg__item--mobile" fill="#F1F1F1" width="800px" height="800px"
                                 viewBox="0 0 256 256" id="Flat" xmlns="http://www.w3.org/2000/svg" stroke="#F1F1F1"
@@ -204,8 +228,8 @@
                             </svg>
                         </div>
 
-                        <p class="redirect__action">Abrir app</p>
-                        <p class="redirect__login">Fazer login</p>
+                        <p class="action__item action__item--app">Abrir app</p>
+                        <p class="action__item action__item--login">Fazer login</p>
                     </div>
                 </div>
             </div>
