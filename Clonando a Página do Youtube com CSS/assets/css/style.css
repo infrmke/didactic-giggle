@@ -47,7 +47,7 @@ p { max-width: 65ch; }
     display: none;
 }
 
-@media screen and (min-width: 45em) {
+@media screen and (min-width: 50em) {
     .svg__item--tablet{
         display: block;
     }
@@ -85,7 +85,7 @@ p { max-width: 65ch; }
     display: none;
 }
 
-@media screen and (min-width: 64em) {
+@media screen and (min-width: 50em) {
     .btn--menu{
         display: block;
     }
@@ -108,11 +108,15 @@ p { max-width: 65ch; }
     border-bottom-left-radius: 0;
 }
 
-@media screen and (min-width: 45em) {
+@media screen and (min-width: 50em) {
     .btn--search{
         border-left: 1px solid #303030;
         padding-inline: 1.25em 1em;
         background-color: #272727;
+    }
+
+    .btn--search-mobile{
+        display: none;
     }
 }
 
@@ -234,7 +238,7 @@ p { max-width: 65ch; }
     margin-top: -.375rem;
 }
 
-@media screen and (min-width: 45em) {
+@media screen and (min-width: 50em) {
     .logo__lang{
         display: block;
     }
@@ -247,7 +251,7 @@ p { max-width: 65ch; }
     gap: .75rem;
 }
 
-@media screen and (min-width: 45em) {
+@media screen and (min-width: 50em) {
     .input{
         display: flex;
         align-items: center;
@@ -271,7 +275,7 @@ p { max-width: 65ch; }
     display: none;
 }
 
-@media screen and (min-width: 45em) {
+@media screen and (min-width: 50em) {
     .input__entry,
     .search__mic{
         display: block;
@@ -279,7 +283,7 @@ p { max-width: 65ch; }
 }
 
 .input__entry{
-    width: 312px;
+    width: 262px;
     font-size: .875rem;
     border-color: transparent;
     border-top-left-radius: 100vmax;
@@ -297,7 +301,7 @@ p { max-width: 65ch; }
 
 @media screen and (min-width: 64em) {
     .input__entry{
-        width: 482px;
+        width: 476px;
         position: relative;
         background-color: #FFFFFF;
         color: #0F0F0F;
@@ -309,35 +313,34 @@ p { max-width: 65ch; }
 }
 
 /* HEADER: login */
-.login__wrapper{
+.redirect__wrapper{
     display: flex;
     align-items: center;
     gap: .75rem;
 }
 
-.redirect{
+.action{
     display: flex;
     align-items: center;
     gap: .5rem;
 }
 
-.redirect__login,
-.redirect__action{
+.action__item{
     font-weight: 500;
     font-size: 14px;
 }
 
-.redirect__login{
+.action__item--login{
     display: none;
 }
 
 @media screen and (min-width: 64em) {
-    .redirect__action{
-        display: none;
-    }
-
-    .redirect__login{
+    .action__item--login{
         display: block;
         color: #065FD4;
+    }
+
+    .action__item--app{
+        display: none;
     }
 }
