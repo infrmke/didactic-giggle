@@ -482,7 +482,8 @@ p { max-width: 65ch; }
 @media screen and (min-width: 64em) {
     .video,
     .suggested{
-        padding: 1.125em 1.125em 0 0;
+        padding-inline: 0 1.125em;
+        padding-block: 1.125em;
     }
 
     .video{
