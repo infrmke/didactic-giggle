@@ -247,11 +247,9 @@
 
                 <div class="info">
                     <div class="title">
-                        <h1 class="video-title">Semana Front-end | Dia 01: Construindo uma Landing Page no Mundo
-                            Invertido
-                            com
-                            HTML e
-                            CSS</h1>
+                        <h1 class="video-title" title="Semana Front-end | Dia 01: Construindo uma Landing Page no Mundo
+                            Invertido com HTML e CSS">Semana Front-end | Dia 01: Construindo uma Landing Page no Mundo
+                            Invertido com HTML e CSS</h1>
                     </div>
 
                     <div class="unlisted">
@@ -278,7 +276,8 @@
 
                                 <div class="channel__info">
                                     <p>DIO</p>
-                                    <p class="text-secondary fs-secondary">120 mil</p>
+                                    <p class="text-secondary fs-secondary md:d-none">120 mil</p>
+                                    <p class="text-secondary fs-secondary sm:d-none md:d-block">120 mil inscritos</p>
                                 </div>
                             </div>
 
@@ -342,7 +341,7 @@
                                 </button>
                             </div>
 
-                            <div class="action__item">
+                            <div class="action__item md:d-none lg:d-block xlg:d-none xxlg:d-block">
                                 <button class="action__button btn btn--light" title="Salvar">
                                     <div class="svg">
                                         <svg class="svg__item" fill="#000000" width="800px" height="800px"
@@ -358,7 +357,7 @@
                             </div>
 
                             <div class="action__item">
-                                <button class="action__button btn btn--light md:d-none">
+                                <button class="action__button btn btn--light md:d-none" title="Denunciar">
                                     <div class="svg">
                                         <svg class="svg__item" width="800px" height="800px" viewBox="0 0 24 24"
                                             fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -407,37 +406,80 @@
                 <div class="comments">
                     <div class="comments__wrapper">
                         <div class="comments__tip">
-                            <p class="fw-500">Comentários</p>
-                            <p class="text-secondary">107</p>
+                            <div class="group group--comments">
+                                <p class="fw-500 md:d-none">Comentários</p>
+                                <p class="text-secondary md:d-none">107</p>
+
+                                <h2 class="fs-primary sm:d-none md:d-block">107</h2>
+                                <h2 class="fs-primary sm:d-none md:d-block">comentários</h2>
+                            </div>
+
+                            <div class="group group--comments">
+                                <div class="svg sm:d-none md:d-block">
+                                    <svg class="svg__item" width="800px" height="800px" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <g id="SVGRepo_bgCarrier" stroke-width="0" />
+                                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" />
+                                        <g id="SVGRepo_iconCarrier">
+                                            <path d="M20 7L4 7" stroke="#000000" stroke-width="1"
+                                                stroke-linecap="round" />
+                                            <path d="M15 12L4 12" stroke="#000000" stroke-width="1"
+                                                stroke-linecap="round" />
+                                            <path d="M9 17H4" stroke="#000000" stroke-width="1"
+                                                stroke-linecap="round" />
+                                        </g>
+                                    </svg>
+                                </div>
+
+                                <p class="sm:d-none md:d-block">Ordenar por</p>
+                            </div>
                         </div>
 
-                        <input class="comments__input fs-secondary" type="text" name="" id=""
-                            placeholder="Adicione um comentário...">
+                        <div class="user">
+                            <img class="user__img sm:d-none md:d-block" src="assets/images/unknown_user.jpg" alt="">
+                            <input class="user__input fs-secondary" type="text" name="" id=""
+                                placeholder="Adicione um comentário...">
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
 
-        <div class="aside">
-            <div class="suggested">
-                <div class="video">
+        <div class="suggested">
+            <div class="suggested__wrapper">
+                <div class="video video--suggested">
                     <div class="video__wrapper video__wrapper--suggested">
                         <div class="player player--suggested">
-                            <img class="player__img" src="assets/images/sidebar/video_geracao_tech.jpg" alt="">
+                            <img class="player__img player__img--suggested"
+                                src="assets/images/sidebar/video_geracao_tech.jpg" alt="">
                             <p class="player__timestamp fs-secondary fw-500">1:24:12</p>
                         </div>
 
                         <div class="group group--suggested">
                             <div class="channel channel--suggested">
                                 <div class="channel__wrapper channel__wrapper--suggested">
-                                    <img class="channel__avatar" src="assets/images/channel_dio.jpg" alt="">
+                                    <img class="channel__avatar channel__avatar--suggested lg:d-none"
+                                        src="assets/images/channel_dio.jpg" alt="">
 
                                     <div class="channel__info channel__info--suggested">
-                                        <h3 class="suggested-video-title">Geração Tech Unimed-BH - Ciência
+                                        <h3 class="suggested-video-title lg:d-none"
+                                            title="Geração Tech Unimed-BH - Ciência de Dados | Aula Inaugural">Geração
+                                            Tech Unimed-BH - Ciência
                                             de Dados |
                                             Aula
                                             Inaugural</h3>
-                                        <p class="fs-secondary text-secondary">DIO • 3,6 mil visualizações</p>
+
+                                        <h3 class="suggested-video-title sm:d-none md:d-none lg:d-block"
+                                            title="Geração Tech Unimed-BH - Ciência de Dados | Aula Inaugural">Geração
+                                            Tech Unimed-BH...
+                                        </h3>
+
+                                        <p class="fs-secondary text-secondary lg:d-none">DIO • 3,6 mil visualizações</p>
+
+                                        <p class="fs-secondary text-secondary sm:d-none md:d-none lg:d-block">DIO</p>
+                                        <p class="fs-secondary text-secondary sm:d-none md:d-none lg:d-block">
+                                            3,6 mil
+                                            visualizações • Transmitido...</p>
                                     </div>
                                 </div>
                             </div>
@@ -465,21 +507,27 @@
                     </div>
                 </div>
 
-                <div class="video">
+                <div class="video video--suggested">
                     <div class="video__wrapper video__wrapper--suggested">
                         <div class="player player--suggested">
-                            <img class="player__img" src="assets/images/sidebar/video_scrum_talks.jpg" alt="">
+                            <img class="player__img player__img--suggested"
+                                src="assets/images/sidebar/video_scrum_talks.jpg" alt="">
                             <p class="player__timestamp fs-secondary fw-500">1:58:57</p>
                         </div>
 
                         <div class="group group--suggested">
                             <div class="channel channel--suggested">
                                 <div class="channel__wrapper channel__wrapper--suggested">
-                                    <img class="channel__avatar" src="assets/images/channel_dio.jpg" alt="">
+                                    <img class="channel__avatar channel__avatar--suggested lg:d-none"
+                                        src="assets/images/channel_dio.jpg" alt="">
 
                                     <div class="channel__info channel__info--suggested">
-                                        <h3 class="suggested-video-title">Scrum Talks</h3>
-                                        <p class="fs-secondary text-secondary">DIO • 2 mil visualizações</p>
+                                        <h3 class="suggested-video-title" title="Scrum talks">Scrum Talks</h3>
+                                        <p class="fs-secondary text-secondary lg:d-none">DIO • 2 mil visualizações</p>
+
+                                        <p class="fs-secondary text-secondary sm:d-none md:d-none lg:d-block">DIO</p>
+                                        <p class="fs-secondary text-secondary sm:d-none md:d-none lg:d-block">2 mil
+                                            visualizações • Transmitido...</p>
                                     </div>
                                 </div>
                             </div>
@@ -507,21 +555,35 @@
                     </div>
                 </div>
 
-                <div class="video">
+                <div class="video video--suggested">
                     <div class="video__wrapper video__wrapper--suggested">
                         <div class="player player--suggested">
-                            <img class="player__img" src="assets/images/sidebar/video_machine_learning.jpg" alt="">
+                            <img class="player__img player__img--suggested"
+                                src="assets/images/sidebar/video_machine_learning.jpg" alt="">
                             <p class="player__timestamp fs-secondary fw-500">1:45:01</p>
                         </div>
 
                         <div class="group group--suggested">
                             <div class="channel channel--suggested">
                                 <div class="channel__wrapper channel__wrapper--suggested">
-                                    <img class="channel__avatar" src="assets/images/channel_dio.jpg" alt="">
+                                    <img class="channel__avatar channel__avatar--suggested lg:d-none"
+                                        src="assets/images/channel_dio.jpg" alt="">
 
                                     <div class="channel__info channel__info--suggested">
-                                        <h3 class="suggested-video-title">Machine Learning Avançado – Fast Track</h3>
-                                        <p class="fs-secondary text-secondary">DIO • 2,1 mil visualizações</p>
+                                        <h3 class="suggested-video-title lg:d-none"
+                                            title="Machine Learning Avançado – Fast Track">Machine Learning Avançado –
+                                            Fast
+                                            Track</h3>
+
+                                        <h3 class="suggested-video-title sm:d-none md:d-none lg:d-block"
+                                            title="Machine Learning Avançado – Fast Track">Machine Learning Avança...
+                                        </h3>
+
+                                        <p class="fs-secondary text-secondary lg:d-none">DIO • 2,1 mil visualizações</p>
+
+                                        <p class="fs-secondary text-secondary sm:d-none md:d-none lg:d-block">DIO</p>
+                                        <p class="fs-secondary text-secondary sm:d-none md:d-none lg:d-block">2,1 mil
+                                            visualizações • Transmitido...</p>
                                     </div>
                                 </div>
                             </div>
@@ -549,21 +611,36 @@
                     </div>
                 </div>
 
-                <div class="video">
+                <div class="video video--suggested">
                     <div class="video__wrapper video__wrapper--suggested">
                         <div class="player player--suggested">
-                            <img class="player__img" src="assets/images/sidebar/video_project_planning.jpg" alt="">
+                            <img class="player__img player__img--suggested"
+                                src="assets/images/sidebar/video_project_planning.jpg" alt="">
                             <p class="player__timestamp fs-secondary fw-500">2:03:06</p>
                         </div>
 
                         <div class="group group--suggested">
                             <div class="channel channel--suggested">
                                 <div class="channel__wrapper channel__wrapper--suggested">
-                                    <img class="channel__avatar" src="assets/images/channel_dio.jpg" alt="">
+                                    <img class="channel__avatar channel__avatar--suggested lg:d-none"
+                                        src="assets/images/channel_dio.jpg" alt="">
 
                                     <div class="channel__info channel__info--suggested">
-                                        <h3 class="suggested-video-title">Global Skills #2 - Project Planning</h3>
-                                        <p class="fs-secondary text-secondary">DIO • 1,1 mil visualizações</p>
+                                        <h3 class="suggested-video-title lg:d-none"
+                                            title="Global Skills #2 - Project Planning">
+                                            Global Skills #2 - Project Planning
+                                        </h3>
+
+                                        <h3 class="suggested-video-title sm:d-none md:d-none lg:d-block"
+                                            title="Global Skills #2 - Project Planning">
+                                            Global Skills #2 - Project...
+                                        </h3>
+
+                                        <p class="fs-secondary text-secondary lg:d-none">DIO • 1,1 mil visualizações</p>
+
+                                        <p class="fs-secondary text-secondary sm:d-none md:d-none lg:d-block">DIO</p>
+                                        <p class="fs-secondary text-secondary sm:d-none md:d-none lg:d-block">1,1 mil
+                                            visualizações • Transmitido...</p>
                                     </div>
                                 </div>
                             </div>
@@ -591,24 +668,37 @@
                     </div>
                 </div>
 
-                <div class="video">
+                <div class="video video--suggested">
                     <div class="video__wrapper video__wrapper--suggested">
                         <div class="player player--suggested">
-                            <img class="player__img" src="assets/images/sidebar/video_aprenda_python.jpg" alt="">
+                            <img class="player__img player__img--suggested"
+                                src="assets/images/sidebar/video_aprenda_python.jpg" alt="">
                             <p class="player__timestamp fs-secondary fw-500">12:59</p>
                         </div>
 
                         <div class="group group--suggested">
                             <div class="channel channel--suggested">
                                 <div class="channel__wrapper channel__wrapper--suggested">
-                                    <img class="channel__avatar" src="assets/images/channel_dio.jpg" alt="">
+                                    <img class="channel__avatar channel__avatar--suggested lg:d-none"
+                                        src="assets/images/channel_dio.jpg" alt="">
 
                                     <div class="channel__info channel__info--suggested">
-                                        <h3 class="suggested-video-title">Como aprender a programar Python
+                                        <h3 class="suggested-video-title lg:d-none"
+                                            title="Como aprender a programar Python do ZERO | Getting Started #26">Como
+                                            aprender a programar Python
                                             do ZERO |
                                             Getting
                                             Started #26</h3>
-                                        <p class="fs-secondary text-secondary">DIO • 5,8 mil visualizações</p>
+
+                                        <h3 class="suggested-video-title sm:d-none md:d-none lg:d-block"
+                                            title="Como aprender a programar Python do ZERO | Getting Started #26">Como
+                                            aprender a programar Pytho...</h3>
+
+                                        <p class="fs-secondary text-secondary lg:d-none">DIO • 5,8 mil visualizações</p>
+
+                                        <p class="fs-secondary text-secondary sm:d-none md:d-none lg:d-block">DIO</p>
+                                        <p class="fs-secondary text-secondary sm:d-none md:d-none lg:d-block">5,8 mil
+                                            visualizações • há 2 anos</p>
                                     </div>
                                 </div>
                             </div>

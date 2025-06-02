@@ -22,7 +22,7 @@ button{ font: inherit; }
 /* general */
 body{
     font-family: "Roboto", Arial, Helvetica, sans-serif;
-    font-size: clamp(1rem, 4vw - 1.25rem, 1.138rem);
+    font-size: 1rem;
     line-height: 1.5;
     background-color: #FFFFFF;
     color: #0F0F0F;
@@ -61,6 +61,26 @@ a{ text-decoration: none; }
     }
 }
 
+@media screen and (min-width: 73.5em) {
+    .xlg\:d-none{
+        display: none !important;
+    }
+
+    .xlg\:d-block{
+        display: block !important;
+    }
+}
+
+@media screen and (min-width: 85em) {
+    .xxlg\:d-none{
+        display: none !important;
+    }
+
+    .xxlg\:d-block{
+        display: block !important;
+    }
+}
+
 /* typography */
 h1, h2, h3, h4{ line-height: 1.2; }
 
@@ -82,8 +102,30 @@ p { max-width: 65ch; }
     font-weight: 400;
 }
 
+@media screen and (min-width: 50em) {
+    .suggested-video-title{
+        font-weight: 500;
+    }
+}
+
+@media screen and (min-width: 64em) {
+    .suggested-video-title{
+        font-size: 14px;
+    }
+}
+
+.fs-primary{
+    font-size: 20px;
+}
+
 .fs-secondary{
     font-size: 14px;
+}
+
+@media screen and (min-width: 64em) {
+    .fs-secondary{
+        font-size: 12px;
+    }
 }
 
 .fw-500{
@@ -141,7 +183,7 @@ p { max-width: 65ch; }
 @media screen and (min-width: 64em) {
     .btn--outline-blue:focus,
     .btn--outline-blue:hover{
-        background-color: #DEF1FF;
+        background-color: #DEF1FF !important;
     }
 
     .btn--outline-dark{
@@ -417,7 +459,7 @@ p { max-width: 65ch; }
 
 /* CONTENT LAYOUT */
 .content,
-.aside{
+.suggested{
     display: flex;
     flex-flow: column nowrap;
 }
@@ -425,35 +467,76 @@ p { max-width: 65ch; }
 @media screen and (min-width: 64em){
     .content{
         flex-direction: row;
+        justify-content: center;
     }
-}
-
-.aside{
-    padding-block: 1.125em;   
 }
 
 .video,
 .suggested{
+    height: fit-content;
     display: flex;
     flex-flow: column nowrap;
 }
 
-.suggested{
-    gap: 1rem;
-    border-top: 1px solid #F2F2F2;
+
+@media screen and (min-width: 64em) {
+    .video,
+    .suggested{
+        padding: 1.125em 1.125em 0 0;
+    }
+
+    .video{
+        width: 80%;
+        margin-left: 1.5rem;
+    }
+
+    .video--suggested{
+        width: 100% !important;
+        margin-left: 0;
+        padding-block: 0;
+    }
+}
+
+@media screen and (min-width: 85em){
+    .video{
+        width: 66%;
+    }
+
+    .suggested{
+        width: 28%;
+    }
 }
 
 /* VIDEO */
 .video__wrapper{
-    cursor: pointer;
     display: flex;
     flex-flow: column nowrap;
     gap: 1rem;
     padding-inline: 1.125em;
 }
 
+@media screen and (min-width: 64em) {
+    .video__wrapper{
+        padding-inline: 0;
+    }
+}
+
 .video__wrapper--suggested{
+    cursor: pointer;
     padding-inline: 0;
+}
+
+@media screen and (min-width: 50em) {
+    .video__wrapper--suggested{
+        flex-direction: row;
+        gap: 1rem;
+    }
+}
+
+@media screen and (min-width: 64em) {
+    .video__wrapper--suggested{
+        gap: .5rem;
+    }
 }
 
 /* VIDEO: player */
@@ -462,12 +545,34 @@ p { max-width: 65ch; }
     margin-inline: -1.125rem;
 }
 
+@media screen and (min-width: 64em) {
+    .player{
+        margin-inline: 0;
+    }
+}
+
 .player--suggested{
     margin-inline: 0;
 }
 
-.player__img{
-    width: min-content;
+@media screen and (min-width: 64em) {
+    .player__img{
+        border-radius: 12px;
+    }
+}
+
+@media screen and (min-width: 50em) {
+    .player__img--suggested{
+        max-width: revert;
+        width: 268px;
+        border-radius: 12px;
+    }
+}
+
+@media screen and (min-width: 64em) {
+    .player__img--suggested{
+        width: 168px;
+    }
 }
 
 .player__timestamp,
@@ -525,12 +630,32 @@ p { max-width: 65ch; }
     }
 }
 
+@media screen and (min-width: 64em) {
+    .group{
+        flex-direction: column;
+    }
+}
+
+@media screen and (min-width: 73.5em) {
+    .group{
+        flex-direction: row;
+    }
+}
+
 .group--suggested{
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
     gap: 0;
     padding-inline: .625em;
+}
+
+@media screen and (min-width: 50em) {
+    .group--suggested{
+        flex-grow: 1;
+        gap: 1rem;
+        padding-inline: 0;
+    }
 }
 
 .channel{
@@ -564,6 +689,12 @@ p { max-width: 65ch; }
     align-items: flex-start;
 }
 
+@media screen and (min-width: 50em) {
+    .channel__wrapper--suggested{
+        flex-direction: column;
+    }
+}
+
 .channel__avatar{
     width: 34px;
     height: 34px;
@@ -574,6 +705,10 @@ p { max-width: 65ch; }
     .channel__avatar{
         width: 42px;
         height: 42px;
+    }
+
+    .channel__avatar--suggested{
+        order: 2;
     }
 }
 
@@ -599,6 +734,12 @@ p { max-width: 65ch; }
     border-radius: 8px;
 }
 
+@media screen and (min-width: 50em) {
+    .comments{
+        background-color: transparent;
+    }
+}
+
 .comments__wrapper{
     display: flex;
     flex-flow: column nowrap;
@@ -606,12 +747,42 @@ p { max-width: 65ch; }
     padding: .5em;
 }
 
-.comments__tip{
-    display: flex;
-    gap: .5rem;
+@media screen and (min-width: 50em) {
+    .comments__wrapper{
+        gap: 1.25rem;
+        padding-inline: 0;
+        padding-block: 1em;
+    }
 }
 
-.comments__input{
+.comments__tip{
+    display: flex;
+    gap: 1.25rem;
+}
+
+@media screen and (min-width: 50em) {
+    .comments__tip{
+        flex-direction: row;
+    }
+}
+
+.group--comments{
+    flex-direction: row;
+    gap: .375rem;
+}
+
+.user{
+    display: flex
+}
+
+.user__img{
+    width: 42px;
+    height: 42px;
+    border-radius: 100vmax;
+}
+
+.user__input{
+    flex-grow: 1;
     border: transparent;
     border-radius: 100vmax;
     margin-inline: 1rem;
@@ -621,5 +792,48 @@ p { max-width: 65ch; }
 
     &::placeholder{
         color: #0F0F0F;
+    }
+}
+
+@media screen and (min-width: 50em) {
+    .user__input{
+        align-self: baseline;
+        border-bottom: 1px solid #F2F2F2;
+        border-radius: 0;
+        padding-left: 0;
+        background-color: transparent;
+        transition: border-bottom-color .2s ease-in;
+    
+        &::placeholder{
+            color: #606060;
+        }
+
+        &:focus{
+            outline: none;
+            border-bottom-color: #606060;
+        }
+    }
+}
+
+/* SUGGESTED */
+.suggested__wrapper{
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 1rem;
+    border-top: 1px solid #F2F2F2;
+    padding-block: 1.125em;   
+}
+
+@media screen and (min-width: 50em){
+    .suggested__wrapper{
+        border-top: none;
+        padding-inline: 1.125em;
+    }
+}
+
+@media screen and (min-width: 64em){
+    .suggested__wrapper{
+        gap: .5rem;
+        padding: 0;
     }
 }
