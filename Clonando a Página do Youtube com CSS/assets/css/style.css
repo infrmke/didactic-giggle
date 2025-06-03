@@ -651,15 +651,14 @@ h1, h2, h3, h4{ line-height: 1.2; }
 }
 
 .group{
-    display: flex;
     order: 4;
+    display: flex;
     flex-flow: column nowrap;
     gap: 1rem;
 }
 
 @media screen and (min-width: 50em) {
     .group{
-        order: 3;
         flex-direction: row;
         justify-content: space-between;
     }
@@ -694,7 +693,14 @@ h1, h2, h3, h4{ line-height: 1.2; }
 }
 
 .group--description{
+    order: 3;
     flex-direction: column;
+}
+
+@media screen and (min-width: 50em) {
+    .group--description{
+        order: 4;
+    }
 }
 
 .channel{
