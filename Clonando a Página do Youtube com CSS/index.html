@@ -262,8 +262,7 @@
                                 </g>
                             </svg>
                         </div>
-
-                        <p class="text-secondary fw-500 fs-secondary">Não listado</p>
+                        <p class="text-secondary fw-500 fs-secondary fs-tertiary">Não listado</p>
                     </div>
 
                     <div class="group">
@@ -274,7 +273,8 @@
                                 <div class="channel__info">
                                     <p>DIO</p>
                                     <p class="text-secondary fs-secondary md:d-none">120 mil</p>
-                                    <p class="text-secondary fs-secondary sm:d-none md:d-block">120 mil inscritos</p>
+                                    <p class="text-secondary fs-secondary fs-tertiary sm:d-none md:d-block">120 mil
+                                        inscritos</p>
                                 </div>
                             </div>
 
@@ -293,7 +293,6 @@
                                                 d="M14 9V5a3 3 0 00-3-3l-4 9v11h11.28a2 2 0 002-1.7l1.38-9a2 2 0 00-2-2.3zM7 22H4a2 2 0 01-2-2v-7a2 2 0 012-2h3" />
                                         </svg>
                                     </div>
-
                                     <p>2 mil</p>
                                 </button>
 
@@ -333,7 +332,6 @@
                                             </g>
                                         </svg>
                                     </div>
-
                                     <p>Compartilhar</p>
                                 </button>
                             </div>
@@ -348,7 +346,6 @@
                                             </path>
                                         </svg>
                                     </div>
-
                                     <p>Salvar</p>
                                 </button>
                             </div>
@@ -363,7 +360,6 @@
                                                 fill="#000000" />
                                         </svg>
                                     </div>
-
                                     <p>Denunciar</p>
                                 </button>
 
@@ -397,7 +393,8 @@
                         </div>
                     </div>
 
-                    <!-- <div class="video__description"></div> -->
+                    <!-- description -->
+                    <!-- chat replay -->
                 </div>
 
                 <div class="comments">
@@ -444,6 +441,12 @@
 
         <div class="suggested">
             <div class="suggested__wrapper">
+                <div class="replay sm:d-none md:d-block">
+                    <button class="btn btn--replay btn--outline-dark fs-secondary">Mostrar replay
+                        do
+                        chat</button>
+                </div>
+
                 <div class="video video--suggested">
                     <div class="video__wrapper video__wrapper--suggested">
                         <div class="player player--suggested">
@@ -474,7 +477,13 @@
                                         <p class="fs-secondary text-secondary lg:d-none">DIO • 3,6 mil visualizações</p>
 
                                         <p class="fs-secondary text-secondary sm:d-none md:d-none lg:d-block">DIO</p>
-                                        <p class="fs-secondary text-secondary sm:d-none md:d-none lg:d-block">
+
+                                        <p
+                                            class="fs-secondary text-secondary sm:d-none md:d-none lg:d-block xlg:d-none">
+                                            3,6 mil
+                                            visualizações...</p>
+                                        <p
+                                            class="fs-secondary text-secondary sm:d-none md:d-none lg:d-none xlg:d-block">
                                             3,6 mil
                                             visualizações • Transmitido...</p>
                                     </div>
@@ -579,7 +588,14 @@
                                         <p class="fs-secondary text-secondary lg:d-none">DIO • 2,1 mil visualizações</p>
 
                                         <p class="fs-secondary text-secondary sm:d-none md:d-none lg:d-block">DIO</p>
-                                        <p class="fs-secondary text-secondary sm:d-none md:d-none lg:d-block">2,1 mil
+
+                                        <p
+                                            class="fs-secondary text-secondary sm:d-none md:d-none lg:d-block xlg:d-none">
+                                            2,1 mil
+                                            visualizações...</p>
+                                        <p
+                                            class="fs-secondary text-secondary sm:d-none md:d-none lg:d-none xlg:d-block">
+                                            2,1 mil
                                             visualizações • Transmitido...</p>
                                     </div>
                                 </div>
@@ -636,7 +652,14 @@
                                         <p class="fs-secondary text-secondary lg:d-none">DIO • 1,1 mil visualizações</p>
 
                                         <p class="fs-secondary text-secondary sm:d-none md:d-none lg:d-block">DIO</p>
-                                        <p class="fs-secondary text-secondary sm:d-none md:d-none lg:d-block">1,1 mil
+
+                                        <p
+                                            class="fs-secondary text-secondary sm:d-none md:d-none lg:d-block xlg:d-none">
+                                            1,1 mil
+                                            visualizações...</p>
+                                        <p
+                                            class="fs-secondary text-secondary sm:d-none md:d-none lg:d-none xlg:d-block">
+                                            1,1 mil
                                             visualizações • Transmitido...</p>
                                     </div>
                                 </div>
@@ -694,8 +717,81 @@
                                         <p class="fs-secondary text-secondary lg:d-none">DIO • 5,8 mil visualizações</p>
 
                                         <p class="fs-secondary text-secondary sm:d-none md:d-none lg:d-block">DIO</p>
-                                        <p class="fs-secondary text-secondary sm:d-none md:d-none lg:d-block">5,8 mil
+
+                                        <p
+                                            class="fs-secondary text-secondary sm:d-none md:d-none lg:d-block xlg:d-none">
+                                            5,8 mil
+                                            visualizações...</p>
+                                        <p
+                                            class="fs-secondary text-secondary sm:d-none md:d-none lg:d-none xlg:d-block">
+                                            5,8 mil
                                             visualizações • há 2 anos</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <button class="btn btn--video" title="Mais opções">
+                                <div class="svg">
+                                    <svg class="svg__item" width="800px" height="800px" viewBox="0 0 24 24"
+                                        id="three-dots" xmlns="http://www.w3.org/2000/svg">
+                                        <g id="_20x20_three-dots--grey" data-name="20x20/three-dots--grey"
+                                            transform="translate(24) rotate(90)">
+                                            <rect id="Rectangle" width="24" height="24" fill="none" />
+                                            <circle id="Oval" cx="1" cy="1" r="1" transform="translate(5 11)"
+                                                stroke="#000000" stroke-miterlimit="10" stroke-width="1" />
+                                            <circle id="Oval-2" data-name="Oval" cx="1" cy="1" r="1"
+                                                transform="translate(11 11)" stroke="#000000" stroke-miterlimit="10"
+                                                stroke-width="1" />
+                                            <circle id="Oval-3" data-name="Oval" cx="1" cy="1" r="1"
+                                                transform="translate(17 11)" stroke="#000000" stroke-miterlimit="10"
+                                                stroke-width="1" />
+                                        </g>
+                                    </svg>
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="video video--suggested">
+                    <div class="video__wrapper video__wrapper--suggested">
+                        <div class="player player--suggested">
+                            <img class="player__img player__img--suggested"
+                                src="assets/images/sidebar/video_geracao_tech.jpg" alt="">
+                            <p class="player__timestamp fs-secondary fw-500">1:24:12</p>
+                        </div>
+
+                        <div class="group group--suggested">
+                            <div class="channel channel--suggested">
+                                <div class="channel__wrapper channel__wrapper--suggested">
+                                    <img class="channel__avatar channel__avatar--suggested lg:d-none"
+                                        src="assets/images/channel_dio.jpg" alt="">
+
+                                    <div class="channel__info channel__info--suggested">
+                                        <h3 class="suggested-video-title lg:d-none"
+                                            title="Geração Tech Unimed-BH - Ciência de Dados | Aula Inaugural">Geração
+                                            Tech Unimed-BH - Ciência
+                                            de Dados |
+                                            Aula
+                                            Inaugural</h3>
+
+                                        <h3 class="suggested-video-title sm:d-none md:d-none lg:d-block"
+                                            title="Geração Tech Unimed-BH - Ciência de Dados | Aula Inaugural">Geração
+                                            Tech Unimed-BH...
+                                        </h3>
+
+                                        <p class="fs-secondary text-secondary lg:d-none">DIO • 3,6 mil visualizações</p>
+
+                                        <p class="fs-secondary text-secondary sm:d-none md:d-none lg:d-block">DIO</p>
+
+                                        <p
+                                            class="fs-secondary text-secondary sm:d-none md:d-none lg:d-block xlg:d-none">
+                                            3,6 mil
+                                            visualizações...</p>
+                                        <p
+                                            class="fs-secondary text-secondary sm:d-none md:d-none lg:d-none xlg:d-block">
+                                            3,6 mil
+                                            visualizações • Transmitido...</p>
                                     </div>
                                 </div>
                             </div>
@@ -798,7 +894,14 @@
                                         <p class="fs-secondary text-secondary lg:d-none">DIO • 2,1 mil visualizações</p>
 
                                         <p class="fs-secondary text-secondary sm:d-none md:d-none lg:d-block">DIO</p>
-                                        <p class="fs-secondary text-secondary sm:d-none md:d-none lg:d-block">2,1 mil
+
+                                        <p
+                                            class="fs-secondary text-secondary sm:d-none md:d-none lg:d-block xlg:d-none">
+                                            2,1 mil
+                                            visualizações...</p>
+                                        <p
+                                            class="fs-secondary text-secondary sm:d-none md:d-none lg:d-none xlg:d-block">
+                                            2,1 mil
                                             visualizações • Transmitido...</p>
                                     </div>
                                 </div>
@@ -855,66 +958,15 @@
                                         <p class="fs-secondary text-secondary lg:d-none">DIO • 1,1 mil visualizações</p>
 
                                         <p class="fs-secondary text-secondary sm:d-none md:d-none lg:d-block">DIO</p>
-                                        <p class="fs-secondary text-secondary sm:d-none md:d-none lg:d-block">1,1 mil
+
+                                        <p
+                                            class="fs-secondary text-secondary sm:d-none md:d-none lg:d-block xlg:d-none">
+                                            1,1 mil
+                                            visualizações...</p>
+                                        <p
+                                            class="fs-secondary text-secondary sm:d-none md:d-none lg:d-none xlg:d-block">
+                                            1,1 mil
                                             visualizações • Transmitido...</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <button class="btn btn--video" title="Mais opções">
-                                <div class="svg">
-                                    <svg class="svg__item" width="800px" height="800px" viewBox="0 0 24 24"
-                                        id="three-dots" xmlns="http://www.w3.org/2000/svg">
-                                        <g id="_20x20_three-dots--grey" data-name="20x20/three-dots--grey"
-                                            transform="translate(24) rotate(90)">
-                                            <rect id="Rectangle" width="24" height="24" fill="none" />
-                                            <circle id="Oval" cx="1" cy="1" r="1" transform="translate(5 11)"
-                                                stroke="#000000" stroke-miterlimit="10" stroke-width="1" />
-                                            <circle id="Oval-2" data-name="Oval" cx="1" cy="1" r="1"
-                                                transform="translate(11 11)" stroke="#000000" stroke-miterlimit="10"
-                                                stroke-width="1" />
-                                            <circle id="Oval-3" data-name="Oval" cx="1" cy="1" r="1"
-                                                transform="translate(17 11)" stroke="#000000" stroke-miterlimit="10"
-                                                stroke-width="1" />
-                                        </g>
-                                    </svg>
-                                </div>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="video video--suggested">
-                    <div class="video__wrapper video__wrapper--suggested">
-                        <div class="player player--suggested">
-                            <img class="player__img player__img--suggested"
-                                src="assets/images/sidebar/video_aprenda_python.jpg" alt="">
-                            <p class="player__timestamp fs-secondary fw-500">12:59</p>
-                        </div>
-
-                        <div class="group group--suggested">
-                            <div class="channel channel--suggested">
-                                <div class="channel__wrapper channel__wrapper--suggested">
-                                    <img class="channel__avatar channel__avatar--suggested lg:d-none"
-                                        src="assets/images/channel_dio.jpg" alt="">
-
-                                    <div class="channel__info channel__info--suggested">
-                                        <h3 class="suggested-video-title lg:d-none"
-                                            title="Como aprender a programar Python do ZERO | Getting Started #26">Como
-                                            aprender a programar Python
-                                            do ZERO |
-                                            Getting
-                                            Started #26</h3>
-
-                                        <h3 class="suggested-video-title sm:d-none md:d-none lg:d-block"
-                                            title="Como aprender a programar Python do ZERO | Getting Started #26">Como
-                                            aprender a programar Pytho...</h3>
-
-                                        <p class="fs-secondary text-secondary lg:d-none">DIO • 5,8 mil visualizações</p>
-
-                                        <p class="fs-secondary text-secondary sm:d-none md:d-none lg:d-block">DIO</p>
-                                        <p class="fs-secondary text-secondary sm:d-none md:d-none lg:d-block">5,8 mil
-                                            visualizações • há 2 anos</p>
                                     </div>
                                 </div>
                             </div>
