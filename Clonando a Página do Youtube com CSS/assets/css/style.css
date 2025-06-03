@@ -84,7 +84,7 @@ a{ text-decoration: none; }
 /* typography */
 h1, h2, h3, h4{ line-height: 1.2; }
 
-p { max-width: 65ch; }
+/* p { max-width: 65ch; } */
 
 .video-title{
     font-size: 20px;
@@ -123,7 +123,7 @@ p { max-width: 65ch; }
 }
 
 @media screen and (min-width: 64em) {
-    .fs-secondary{
+    .fs-tertiary{
         font-size: 12px;
     }
 }
@@ -132,8 +132,17 @@ p { max-width: 65ch; }
     font-weight: 500;
 }
 
+.fw-700{
+    font-weight: 700;
+}
+
 .text-secondary{
     color: #606060;
+}
+
+.text-link{
+    cursor: pointer;
+    color: #065FD4;
 }
 
 /* svg */
@@ -180,19 +189,19 @@ p { max-width: 65ch; }
     }
 }
 
+.btn--outline-dark{
+    border: 1px solid #D3D3D3;
+    
+    &:focus,
+    &:hover{
+        background-color: #E5E5E5;
+    }
+}
+
 @media screen and (min-width: 64em) {
     .btn--outline-blue:focus,
     .btn--outline-blue:hover{
         background-color: #DEF1FF !important;
-    }
-
-    .btn--outline-dark{
-        border: 1px solid #D3D3D3;
-
-        &:focus,
-        &:hover{
-            background-color: #E5E5E5;
-        }
     }
 }
 
@@ -269,6 +278,10 @@ p { max-width: 65ch; }
     padding: 0;
 }
 
+.btn--replay{
+    width: 100%;
+}
+
 /* action */
 .action{
     display: flex;
@@ -310,6 +323,7 @@ p { max-width: 65ch; }
 
 .action__button{
     display: flex;
+    justify-content: center;
     align-items: center;
     gap: .5rem;
 }
@@ -606,26 +620,34 @@ p { max-width: 65ch; }
 .info{
     display: flex;
     flex-flow: column nowrap;
+    gap: 1rem;
+}
+
+.title{
+    order: 1;
 }
 
 .unlisted{
     width: fit-content;
     display: flex;
+    order: 2;
     align-items: center;
     border-radius: 4px;
-    margin-block: .375rem;
+    margin-block: -.75rem;
     padding-inline: .25em;
     background-color: #F2F2F2;
 }
 
 .group{
     display: flex;
+    order: 4;
     flex-flow: column nowrap;
     gap: 1rem;
 }
 
 @media screen and (min-width: 50em) {
     .group{
+        order: 3;
         flex-direction: row;
         justify-content: space-between;
     }
@@ -837,4 +859,9 @@ p { max-width: 65ch; }
         gap: .5rem;
         padding: 0;
     }
+}
+
+.replay{
+    border-top: 2px solid #E5E5E5;
+    padding-block: 1em;
 }
