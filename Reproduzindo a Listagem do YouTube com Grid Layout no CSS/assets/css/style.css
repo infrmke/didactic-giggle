@@ -19,6 +19,15 @@ video {
 }
 
 input,
-button,
-select,
-textarea{ font: inherit; }
+button{ font: inherit; }
+
+/* general */
+body{
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    line-height: 1.5;
+    background-color: #FFFFFF;
+    color: #0F0F0F;
+}
+
+a{ text-decoration: none; }
