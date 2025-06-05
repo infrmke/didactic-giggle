@@ -90,6 +90,14 @@ a{
     border-radius: 100vmax;
 }
 
+@media screen and (min-width: 50em) {
+    .avatar__img--ad{
+        width: 80px;
+        height: 80px;
+        object-fit: contain;
+    }
+}
+
 .propaganda__img,
 .player__img{
     width: 100%;
