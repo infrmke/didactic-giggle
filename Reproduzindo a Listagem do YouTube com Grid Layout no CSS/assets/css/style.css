@@ -12,8 +12,7 @@ body { min-height: 100vh; }
 
 img,
 picture,
-svg,
-video {
+svg {
   display: block;
   max-width: 100%;
 }
@@ -253,9 +252,17 @@ a{
 }
 
 /* VIDEOS */
+.video,
 .video__wrapper{
     display: flex;
     flex-flow: column nowrap;
+}
+
+.video{
+    gap: 1.5rem;
+}
+
+.video__wrapper{
     gap: 1rem;
 }
 
