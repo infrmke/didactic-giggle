@@ -50,16 +50,28 @@ a{
 }
 
 .title{
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 500;
 }
 
-.subtitle-1{
-    font-size: 14px;
+@media screen and (min-width: 50em) {
+    .title{
+        font-size: 16px;
+    }
 }
 
-.subtitle-2{
+.subtitle-1{
     font-size: 12px;
+}
+
+@media screen and (min-width: 50em) {
+    .subtitle-1{
+        font-size: 14px;
+    }
+
+    .subtitle-2{
+        font-size: 12px;
+    }
 }
 
 .semibold{
@@ -191,7 +203,6 @@ a{
 .content-nav__item{
     flex-shrink: 0;
     font-size: 14px;
-    border-radius: 8px;
 }
 
 /* CONTENT */
