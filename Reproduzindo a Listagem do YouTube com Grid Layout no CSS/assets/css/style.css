@@ -1,4 +1,4 @@
-/* reset */
+/* RESET */
 *,
 *::before,
 *::after { box-sizing: border-box; }
@@ -21,7 +21,15 @@ video {
 input,
 button{ font: inherit; }
 
-/* general */
+/* UTILITIES */
+.group{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding-inline: .75em;
+}
+
+/* GENERAL */
 body{
     font-family: "Roboto", Arial, Helvetica, sans-serif;
     font-size: 1rem;
@@ -30,4 +38,256 @@ body{
     color: #0F0F0F;
 }
 
-a{ text-decoration: none; }
+a{
+    text-decoration: none;
+    color: #065FD4;
+}
+
+/* TYPOGRAPHY */
+.title,
+.subtitle-1,
+.subtitle-2{
+    line-height: 1.2;
+}
+
+.title{
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.subtitle-1{
+    font-size: 14px;
+}
+
+.subtitle-2{
+    font-size: 12px;
+}
+
+.semibold{
+    font-weight: 500;
+}
+
+.subcolor{
+    color: #606060;
+}
+
+/* images */
+.avatar__img{
+    max-width: revert;
+    width: 40px;
+    height: 40px;
+    border-radius: 100vmax;
+}
+
+.propaganda__img,
+.player__img{
+    width: 100%;
+}
+
+/* buttons */
+.btn{
+    --border-radius: 100vmax;
+    --padding-block: .625em;
+    --padding-inline: 1em;
+
+    cursor: pointer;
+    font-weight: 500;
+    border-radius: var(--border-radius);
+    padding:  var(--padding-block) var(--padding-inline);
+}
+
+.btn--light{
+    background-color: #F2F2F2;
+    color: #0F0F0F;
+
+    &:focus,
+    &:hover{
+        background-color: #E5E5E5;
+    }
+}
+.selected{
+    background-color: #606060;
+    color: #F1F1F1;
+
+    &:focus,
+    &:hover{
+        background-color: #606060;
+        color: #F1F1F1;
+    }
+}
+
+.btn--dark-blue{
+    background-color: #065FD4;
+    color: #F1F1F1;
+
+    &:focus,
+    &:hover{
+        background-color: #0556BF;
+    }
+}
+
+/* HEADER */
+.header__wrapper{
+    border-bottom: 1px solid #E5E5E5;
+    padding: .75em;
+    background-color: #FFFFFF;
+    color: #0F0F0F;
+}
+
+/* NAVBARS */
+.header-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-nav{
+    position: fixed;
+    z-index: 1;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.main-nav__wrapper{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: .5em;
+    background-color: #F2F2F2;
+}
+
+.main-nav__item{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    gap: 0;
+}
+
+.content-nav{
+    display: flex;
+    overflow-x: scroll;
+    scrollbar-width: none;
+    gap: 1.5rem;
+    margin-bottom: -1rem;
+    padding: .5em .75em;
+    
+    .svg{
+        flex-shrink: 0;
+    }
+    
+    .btn{
+        --border-radius: 8px;
+        --padding-block: .5em;
+        --padding-inline: .75em;
+    }
+}
+
+.content-nav__wrapper{
+    display: flex;
+    align-items: center;
+    gap: .75rem;
+}
+
+.content-nav__item{
+    flex-shrink: 0;
+    font-size: 14px;
+    border-radius: 8px;
+}
+
+/* CONTENT */
+.content__wrapper{
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 1rem;
+    margin-bottom: 1.25rem;
+    padding-bottom: 3.5em;
+}
+
+/* AD */
+.publicity__wrapper{
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 1rem;
+}
+
+.propaganda{
+    position: relative;
+}
+
+.propaganda__img{
+    aspect-ratio: 4/3;
+    object-fit: cover;
+}
+
+.propaganda__button{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    margin-bottom: .5rem;
+    margin-right: .5rem;
+    background-color: #0f0f0fb0;
+    color: #F1F1F1;
+
+    &.btn{
+        --padding-block: .5em;
+        --padding-inline: .5em;
+    }
+}
+
+.ad{
+    width: fit-content;
+    display: flex;
+    gap: .75rem;
+}
+
+.ad__info{
+    display: flex;
+    flex-flow: column nowrap;
+    gap: .25rem;
+}
+
+.ad__button{
+    text-align: center;
+    margin-inline: .75em;
+}
+
+/* VIDEOS */
+.video__wrapper{
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 1rem;
+}
+
+/* player */
+.player{
+    position: relative;
+}
+
+.player__timestamp{
+    user-select: none;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    font-weight: 500;
+    font-size: 14px;
+    border-radius: 4px;
+    margin-bottom: .5rem;
+    margin-right: .5rem;
+    padding-inline: .25em;
+    background-color: #0f0f0f99;
+    color: #F1F1F1;
+}
+
+/* channel */
+.channel{
+    width: fit-content;
+    display: flex;
+    gap: .75rem;
+}
+
+.channel__info{
+    display: flex;
+    flex-flow: column nowrap;
+    gap: .25rem;
+}
