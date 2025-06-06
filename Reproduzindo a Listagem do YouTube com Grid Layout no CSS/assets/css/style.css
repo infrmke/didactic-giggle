@@ -38,6 +38,37 @@ button{ font: inherit; }
     }
 }
 
+/* media */
+@media screen and (max-width: 50em){
+    .sm\:d-block{
+        display: block !important;
+    }
+
+    .sm\:d-none{
+        display: none !important;
+    }
+}
+
+@media screen and (min-width: 50em){
+    .md\:d-block{
+        display: block !important;
+    }
+
+    .md\:d-none{
+        display: none !important;
+    }
+}
+
+@media screen and (min-width: 64em) {
+    .lg\:d-none{
+        display: none !important;
+    }
+
+    .lg\:d-block{
+        display: block !important;
+    }
+}
+
 /* GENERAL */
 body{
     font-family: "Roboto", Arial, Helvetica, sans-serif;
