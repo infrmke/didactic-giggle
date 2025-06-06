@@ -28,6 +28,16 @@ button{ font: inherit; }
     padding-inline: .75em;
 }
 
+@media screen and (min-width: 50em) {
+    .group--ad{
+        grid-column: 2;
+    }
+
+    .group--video{
+        padding-inline: 0;
+    }
+}
+
 /* GENERAL */
 body{
     font-family: "Roboto", Arial, Helvetica, sans-serif;
@@ -103,6 +113,13 @@ a{
     width: 100%;
 }
 
+@media screen and (min-width: 50em) {
+    .propaganda__img,
+    .player__img{
+        border-radius: 12px;
+    }
+}
+
 /* buttons */
 .btn{
     --border-radius: 100vmax;
@@ -160,6 +177,7 @@ a{
     align-items: center;
 }
 
+/* main */
 .main-nav{
     position: fixed;
     z-index: 1;
@@ -183,14 +201,26 @@ a{
     gap: 0;
 }
 
-.content-nav{
-    display: flex;
+/* filter */
+.filter-nav{
+    background-color: #FFFFFF;
+}
+
+@media screen and (min-width: 50em) {
+    .filter-nav{
+        border-bottom: 1px solid #E5E5E5;
+        margin-bottom: 0;
+    }
+}
+
+.filter-nav__wrapper{
     overflow-x: scroll;
     scrollbar-width: none;
+    display: flex;
+    align-items: center;
     gap: 1.5rem;
-    margin-bottom: -1rem;
     padding: .5em .75em;
-    
+
     .svg{
         flex-shrink: 0;
     }
@@ -202,18 +232,17 @@ a{
     }
 }
 
-.content-nav__wrapper{
+.topic-nav{
     display: flex;
-    align-items: center;
     gap: .75rem;
 }
 
-.content-nav__item{
-    flex-shrink: 0;
+.topic-nav__item{
     font-size: 14px;
+    white-space: nowrap;
 }
 
-/* CONTENT */
+/* CONTENT GRID */
 .content__wrapper{
     display: flex;
     flex-flow: column nowrap;
@@ -222,20 +251,56 @@ a{
     padding-bottom: 3.5em;
 }
 
+@media screen and (min-width: 50em) {
+    .content__wrapper{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem 0;
+        margin-bottom: 4rem;
+        padding: .75em;
+    }
+}
+
 /* AD */
+@media screen and (min-width: 50em) {
+    .publicity{
+        grid-column: span 2;
+    }
+}
+
 .publicity__wrapper{
     display: flex;
     flex-flow: column nowrap;
     gap: 1rem;
 }
 
+@media screen and (min-width: 50em) {
+    .publicity__wrapper{
+        display: grid;
+        grid-template: repeat(2, auto) / 300px auto;
+    }
+}
+
 .propaganda{
     position: relative;
+}
+
+@media screen and (min-width: 50em) {
+    .propaganda{
+        grid-column: span 1;
+        grid-row: span 2;
+    }
 }
 
 .propaganda__img{
     aspect-ratio: 4/3;
     object-fit: cover;
+}
+
+@media screen and (min-width: 50em) {
+    .propaganda__img{
+        aspect-ratio: 21/9;
+    }
 }
 
 .propaganda__button{
@@ -270,6 +335,12 @@ a{
     margin-inline: .75em;
 }
 
+@media screen and (min-width: 50em) {
+    .ad__button{
+        grid-column: 2;
+    }
+}
+
 /* VIDEOS */
 .video,
 .video__wrapper{
@@ -279,6 +350,15 @@ a{
 
 .video{
     gap: 1.5rem;
+}
+
+@media screen and (min-width: 50em) {
+    .video{
+        grid-column: span 2;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem 1.125rem;
+    }
 }
 
 .video__wrapper{
