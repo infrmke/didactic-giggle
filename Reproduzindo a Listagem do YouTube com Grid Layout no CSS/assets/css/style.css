@@ -33,10 +33,6 @@ button{ font: inherit; }
         grid-column: 2;
     }
 
-    .group--video{
-        padding-inline: 0;
-    }
-
     .group--header{
         padding-inline: 0;
     }
@@ -45,6 +41,16 @@ button{ font: inherit; }
 @media screen and (min-width: 73.5em) {
     .group--ad{
         grid-column: 3;
+    }
+}
+
+.group--video{
+    cursor: pointer;
+}
+
+@media screen and (min-width: 50em) {
+    .group--video{
+        padding-inline: 0;
     }
 }
 
@@ -705,10 +711,22 @@ a{
 
 .video__wrapper{
     gap: 1rem;
+    border-radius: 12px;
+}
+
+/* colored hover effect  */
+.colored-hover{
+    --hover-clr: transparent;
+
+    &:focus,
+    &:hover{
+        background-color: var(--hover-clr);
+    }
 }
 
 /* player */
 .player{
+    cursor: pointer;
     position: relative;
 }
 
