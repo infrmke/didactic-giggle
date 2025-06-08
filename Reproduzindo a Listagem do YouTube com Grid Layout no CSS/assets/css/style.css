@@ -545,12 +545,14 @@ a{
 @media screen and (min-width: 50em) {
     .publicity{
         grid-column: span 2;
+        padding-left: 6px;
     }
 }
 
 @media screen and (min-width: 73.5em) {
     .publicity{
         grid-column: span 3;
+        padding-left: 0;
     }
 }
 
@@ -692,7 +694,7 @@ a{
         grid-column: span 2;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        gap: 2rem 1.125rem;
+        gap: 1rem .25rem;
     }
 }
 
@@ -706,6 +708,7 @@ a{
     .video{
         grid-column: span 3;
         grid-template-columns: repeat(3, 1fr);
+        padding-left: 18px;
     }
 }
 
@@ -714,13 +717,22 @@ a{
     border-radius: 12px;
 }
 
-/* colored hover effect  */
-.colored-hover{
-    --hover-clr: transparent;
+@media screen and (min-width: 50em) {
+    .video__wrapper{
+        padding-inline: 6px;
+        padding-block: 4px 16px;
+    }
+}
 
-    &:focus,
-    &:hover{
-        background-color: var(--hover-clr);
+/* colored hover effect  */
+@media screen and (min-width: 50em) {
+    .colored-hover{
+        --hover-clr: transparent;
+    
+        &:focus,
+        &:hover{
+            background-color: var(--hover-clr);
+        }
     }
 }
 
