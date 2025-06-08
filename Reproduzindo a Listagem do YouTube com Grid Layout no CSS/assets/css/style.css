@@ -558,14 +558,14 @@ a{
 @media screen and (min-width: 50em) {
     .publicity__wrapper{
         display: grid;
-        grid-template: repeat(2, auto) / 300px auto;
+        grid-template: repeat(2, auto) / repeat(2, 1fr);
+        column-gap: 1.125rem;
     }
 }
 
 @media screen and (min-width: 64em) {
     .publicity__wrapper{
         grid-template-columns: repeat(2, 1fr);
-        column-gap: 1.125rem;
         padding-top: 24px;
         padding-inline: 24px;
     }
@@ -603,11 +603,6 @@ a{
 @media screen and (min-width: 50em) {
     .propaganda__img{
         aspect-ratio: 21/9;
-    }
-}
-
-@media screen and (min-width: 73.5em) {
-    .propaganda__img{
         height: 100%;
     }
 }
@@ -665,8 +660,14 @@ a{
 @media screen and (min-width: 50em) {
     .ad__btn{
         grid-column: 2;
-        align-self: flex-start;
+        align-self: flex-end;
         margin-inline: 0;
+    }
+}
+
+@media screen and (min-width: 64em) {
+    .ad__btn{
+        align-self: flex-start;
     }
 }
 
