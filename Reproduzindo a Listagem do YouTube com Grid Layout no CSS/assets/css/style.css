@@ -42,6 +42,12 @@ button{ font: inherit; }
     }
 }
 
+@media screen and (min-width: 73.5em) {
+    .group--ad{
+        grid-column: 3;
+    }
+}
+
 /* media */
 @media screen and (max-width: 50em){
    .sm\:d-block{
@@ -484,7 +490,7 @@ a{
 
 @media screen and (min-width: 64em) {
     .filter-nav__wrapper{
-        padding-inline: 0;
+        padding-inline: 24px;
     }
 }
 
@@ -524,10 +530,22 @@ a{
     }
 }
 
+@media screen and (min-width: 73.5em) {
+    .content__wrapper{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
 /* AD */
 @media screen and (min-width: 50em) {
     .publicity{
         grid-column: span 2;
+    }
+}
+
+@media screen and (min-width: 73.5em) {
+    .publicity{
+        grid-column: span 3;
     }
 }
 
@@ -544,6 +562,21 @@ a{
     }
 }
 
+@media screen and (min-width: 64em) {
+    .publicity__wrapper{
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 1.125rem;
+        padding-top: 24px;
+        padding-inline: 24px;
+    }
+}
+
+@media screen and (min-width: 73.5em) {
+    .publicity__wrapper{
+        grid-template: 220px / repeat(3, 1fr);
+    }
+}
+
 .propaganda{
     position: relative;
 }
@@ -552,6 +585,13 @@ a{
     .propaganda{
         grid-column: span 1;
         grid-row: span 2;
+    }
+}
+
+@media screen and (min-width: 73.5em) {
+    .propaganda{
+        grid-column: span 2;
+        grid-row: 1;
     }
 }
 
@@ -566,7 +606,13 @@ a{
     }
 }
 
-.propaganda__button{
+@media screen and (min-width: 73.5em) {
+    .propaganda__img{
+        height: 100%;
+    }
+}
+
+.propaganda__btn{
     position: absolute;
     right: 0;
     bottom: 0;
@@ -581,10 +627,22 @@ a{
     }
 }
 
+@media screen and (min-width: 64em) {
+    .propaganda__btn{
+        display: none;
+    }
+}
+
 .ad{
     width: fit-content;
     display: flex;
     gap: .75rem;
+}
+
+@media screen and (min-width: 64em) {
+    .ad{
+        gap: 1rem;
+    }
 }
 
 .ad__info{
@@ -593,14 +651,22 @@ a{
     gap: .25rem;
 }
 
-.ad__button{
+@media screen and (min-width: 50em) {
+    .ad__info{
+        gap: .5rem;
+    }
+}
+
+.ad__btn{
     text-align: center;
     margin-inline: .75em;
 }
 
 @media screen and (min-width: 50em) {
-    .ad__button{
+    .ad__btn{
         grid-column: 2;
+        align-self: flex-start;
+        margin-inline: 0;
     }
 }
 
@@ -621,6 +687,12 @@ a{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 1.5rem 1.125rem;
+    }
+}
+
+@media screen and (min-width: 64em) {
+    .video{
+        padding-inline: 24px;
     }
 }
 
